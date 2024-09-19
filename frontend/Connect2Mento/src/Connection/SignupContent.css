@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v291_3{
+    width: 100%;
+    height: 730px;
+    background: rgba(2,54,80,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v291_4{
+    width: 899px;
+    height: 730px;
+    background: rgba(249,249,249,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 630px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .v291_5{
+    width: 101px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 73px;
+    left: 400px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v291_6 {
+    opacity: 1;
+    position: absolute;
+    top: 183px;
+    left: 925px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+    
+  }
+  .v291_7 {
+    background: rgba(0,0,0,0);
+    opacity: 1;
+    position: absolute;
+    overflow: hidden;
+  }
+  .emailfield {
+    background: rgba(249,249,249,1);
+    opacity: 1;
+    position: absolute;
+    top: 295px;
+    left: 850px;
+    overflow: hidden;
+  }
+
+  .paswordfield {
+    opacity: 1;
+    position: absolute;
+    top: 375px;
+    left: 850px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+  }
+
+  .firstname{
+    width: 500px;
+    height: 30px;
+    border-color: black;
+    border-radius: 10px;
+  }
+  
+.firstnametitle{
+  font-size: 16px;
+  text-align: left;
+  
+}
+
+.lastnamefield{
+    opacity: 1;
+    position: absolute;
+    top: 215px;
+    left: 850px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden; 
+}
+
+.lastnametitle{
+    font-size: 16px;
+    text-align: left; 
+}
+
+.lastname{
+    width: 500px;
+    height: 30px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.emailtitle{
+    font-size: 16px;
+    text-align: left;   
+}
+
+.email{
+    width: 500px;
+    height: 30px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.firstnametitle{
+    font-size: 16px;
+    text-align: left;  
+}
+
+.firstname{
+  width: 500px;
+  height: 30px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+
+.passwordtitle{
+  font-size: 16px;
+  text-align: left;
+}
+
+.password{
+  width: 500px;
+  height: 30px;
+  border-color: black;
+  border-radius: 10px;
+  
+}
+
+.firstnamefield{
+    opacity: 1;
+    position: absolute;
+    top: 135px;
+    left: 850px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;    
+}
+
+  .v291_13 {
+    width: 45px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 398px;
+    left: 1110px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .forgotpasswordname{
+    width: 241px;
+    color: rgba(164,164,164,1);
+    position: absolute;
+    top: 325px;
+    left: 852px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .signupwithtitle{
+    position: absolute;
+    top: 510px;
+    left: 1050px;
+  }
+  .signupwith {
+    width: 120px;
+    color: gray;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 17px;
+    text-align: center;
+  }
+  .alreadyaccounnt {
+    width: 170px;
+    color: rgba(75,75,75,1);
+    position: absolute;
+    top: 650px;
+    left: 858px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+  .loginlink {
+    width: 52px;
+    color: rgba(2,48,71,1);
+    position: absolute;
+    top: 650px;
+    left: 1050px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .googleicon {
+    width: 32px;
+    height: 32px;
+    background: url("../images/v291_20.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 575px;
+    left: 940px;
+    overflow: hidden;
+  }
+  .googleword {
+    width: 69px;
+    color: rgba(75,75,75,1);
+    position: absolute;
+    top: 583px;
+    left: 990px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .microsoftword {
+    width: 69px;
+    color: rgba(75,75,75,1);
+    position: absolute;
+    top: 583px;
+    left: 1210px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .microsofticon {
+    width: 32px;
+    height: 32px;
+    background: url("../images/v291_23.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 575px;
+    left: 1155px;
+    overflow: hidden;
+  }
+
+  .signupbutton{
+    width: 45px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 465px;
+    left: 850px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .signupbtn{
+    height: 40px;
+    width: 500px;
+    background-color: rgba(21,141,127,1);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+   
+  }
+  
+  .signupbtn:hover{
+    background-color: rgba(2,54,80,1);
+}
+
+    

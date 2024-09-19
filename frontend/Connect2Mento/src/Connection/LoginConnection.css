@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .loginview{
+    width: 100%;
+    height: 730px;
+    background: rgba(2,54,80,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .log{
+    width: 899px;
+    height: 730px;
+    background: rgba(249,249,249,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 630px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .logtit{
+    width: 101px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 73px;
+    left: 400px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+ 
+  .usefield {
+    background: rgba(249,249,249,1);
+    opacity: 1;
+    position: absolute;
+    top: 164px;
+    left: 850px;
+    overflow: hidden;
+  }
+
+  .pasfield{
+    opacity: 1;
+    position: absolute;
+    top: 250px;
+    left: 850px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+  }
+
+  .username{
+    width: 500px;
+    height: 30px;
+    border-color: black;
+    border-radius: 10px;
+  }
+  
+.usernametitle{
+  font-size: 16px;
+  text-align: left;
+  
+}
+
+.passwordtitle{
+  font-size: 16px;
+  text-align: left;
+}
+
+.password{
+  width: 500px;
+  height: 30px;
+  border-color: black;
+  border-radius: 10px;
+  
+}
+
+  .v291_13 {
+    width: 45px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 398px;
+    left: 1110px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .forgotpasswordname{
+    width: 241px;
+    color: rgba(164,164,164,1);
+    position: absolute;
+    top: 325px;
+    left: 852px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }
+  .loginwithtitle{
+    position: absolute;
+    top: 446px;
+    left: 1050px;
+  }
+  .loginwith {
+    width: 120px;
+    color: gray;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 20px;
+    text-align: center;
+  }
+  .dontaccount {
+    color: rgba(75,75,75,1);
+    position: absolute;
+    top: 600px;
+    left: 859px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+  .signuplink {
+    width: 52px;
+    color: rgba(2,48,71,1);
+    position: absolute;
+    top: 600px;
+    left: 1050px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .googicon {
+    width: 32px;
+    height: 32px;
+    background: url("../images/v291_20.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 496px;
+    left: 940px;
+    overflow: hidden;
+  }
+  .googword {
+    width: 69px;
+    color: rgba(75,75,75,1);
+    position: absolute;
+    top: 505px;
+    left: 990px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .microword {
+    width: 69px;
+    color: rgba(75,75,75,1);
+    position: absolute;
+    top: 505px;
+    left: 1210px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .microsicon {
+    width: 32px;
+    height: 32px;
+    background: url("../images/v291_23.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 496px;
+    left: 1155px;
+    overflow: hidden;
+  }
+
+  .loginbutton{
+    width: 45px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 398px;
+    left: 850px;
+    font-family: Inter;
+    font-weight: Medium;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .loginbtn{
+    height: 40px;
+    width: 500px;
+    background-color: rgba(21,141,127,1);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+   
+  }
+
+  .loginbtn:hover{
+ background-color: rgba(2,54,80,1);
+  }
+  
