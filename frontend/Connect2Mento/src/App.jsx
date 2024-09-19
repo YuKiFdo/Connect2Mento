@@ -12,7 +12,7 @@ function App() {
   return (
     <div id ="wrapper">
       <HeaderContent/>
-      <ImageContent/>
+      {/* <ImageContent/> */}
       <BodyContent/>
       <AchieveContent/>
       <WhyusContent/>

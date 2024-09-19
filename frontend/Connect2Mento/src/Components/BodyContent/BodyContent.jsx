@@ -1,5 +1,6 @@
 import React from 'react'
 import './BodyContent.css'
+import ImageContent from '../ImageContent/ImageContent'
 
 
 function BodyContent() {
@@ -11,6 +12,10 @@ function BodyContent() {
       <h1 className="heading">
         Find the <br /> Best <br /> Mentor with <br /> Us
       </h1>
+
+      <div className='imgContainer'>
+      <ImageContent/>
+      </div>
 
         <div className="searchbar">
           <input 
@@ -28,7 +33,9 @@ function BodyContent() {
             <span className="tag">QA Engineers</span>
             <span className="tag">Career Coaches</span>
           </div>
+          
     </div>
+     
         
     </section>
 
