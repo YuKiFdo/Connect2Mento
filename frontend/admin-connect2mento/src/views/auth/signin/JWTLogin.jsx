@@ -7,7 +7,7 @@ const JWTLogin = () => {
   return (
     <Formik
       initialValues={{
-        email: 'info@codedthemes.com',
+        email: 'Enter Your Email',
         password: '123456',
         submit: null
       }}
@@ -59,7 +59,7 @@ const JWTLogin = () => {
           <Row>
             <Col mt={2}>
               <Button className="btn-block mb-4" color="primary" disabled={isSubmitting} size="large" type="submit" variant="primary">
-                Signin
+                Login
               </Button>
             </Col>
           </Row>
