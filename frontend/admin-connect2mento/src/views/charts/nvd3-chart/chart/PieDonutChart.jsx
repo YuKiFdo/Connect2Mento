@@ -13,7 +13,7 @@ const datum = [
 
 const PieDonutChart = () => {
   useEffect(() => {
-    const width = 300;
+    const width = 400;
     const height = 300;
     const radius = Math.min(width, height) / 2;
     const innerRadius = radius * 0.6;
