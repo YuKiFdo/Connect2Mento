@@ -11,7 +11,7 @@ $Menu-collapsed-width: 80px;
 // temp variables
 $theme-color: linear-gradient(-135deg, #1de9b6 0%, #1dc4e9 100%);
 $theme-color2: linear-gradient(-135deg, #899fd4 0%, #a389d4 100%);
-$primary-color: #04a9f5;
+$primary-color: #1de9b6;
 $warning-color: #f4c22b;
 $danger-color: #f44236;
 $success-color: #1de9b6;
@@ -33,8 +33,8 @@ $header-light-text-color: #3f4d67;
 
 // Menu
 $menu-caption-color: #14171d;
-$menu-dark-background: #3f4d67;
-$menu-dark-text-color: #a9b7d0;
+$menu-dark-background: #023650;
+$menu-dark-text-color: #a09f9f;
 $menu-light-background: #fff;
 $menu-light-text-color: #3f4d67;
 $menu-active-color: #04a9f5;
@@ -61,7 +61,7 @@ $color-title-color: $primary-color, #ff5252, #9575cd, #23b7e5, lighten($dark-lay
 // layout-6 background color
 $layout-6-bg-color: #23b7e5;
 
-$theme-font-family: 'Open Sans', sans-serif;
+$theme-font-family: 'poppins';
 $theme-font-size: 14px;
 $theme-background: #f4f7fa;
 $theme-font-color: #888;

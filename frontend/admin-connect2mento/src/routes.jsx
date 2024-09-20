@@ -67,7 +67,7 @@ const routes = [
       },
       {
         exact: 'true',
-        path: '/admin/Mentee',
+        path: '/admin/mentee/view',
         element: lazy(() => import('./views/Mentee'))
       },
       {

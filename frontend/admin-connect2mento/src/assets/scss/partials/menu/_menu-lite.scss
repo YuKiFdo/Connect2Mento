@@ -5,7 +5,6 @@
   align-items: center;
 
   .b-bg {
-    background: $theme-color;
     border-radius: 10px;
     width: 35px;
     height: 35px;
@@ -23,6 +22,11 @@
     font-weight: 100;
     color: #fff;
     font-size: 18px;
+  }
+
+  #mainlogo {
+   height: 50px;
+   width: 50px;
   }
 }
 
@@ -1046,7 +1050,7 @@
       &.active,
       &:focus,
       &:hover {
-        color: #1dc4e9;
+        color: #158D7F;
       }
 
       .pcoded-submenu > li {

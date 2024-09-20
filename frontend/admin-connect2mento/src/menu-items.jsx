@@ -13,13 +13,6 @@ const menuItems = {
           icon: 'feather icon-home',
           url: '/admin/dashboard'
         },
-        {
-          id: 'mentee',
-          title: 'View All Mentees',
-          type: 'item',
-          icon: 'feather icon-file-text',
-          url: '/admin/Mentee'
-        },
     
       ]
     },
@@ -44,6 +37,22 @@ const menuItems = {
           icon: 'feather icon-book',
           url: '/admin/mentor/application'
         }
+      ]
+    },
+
+    {
+      id: 'mentee-section',
+      title: 'Mentee',
+      type: 'group',
+      icon: 'icon-ui',
+      children: [
+        {
+          id: 'view-mentee',
+          title: 'View Mentees',
+          type: 'item',
+          icon: 'feather icon-book',
+          url: '/admin/mentee/view'
+        },
       ]
     },
 
