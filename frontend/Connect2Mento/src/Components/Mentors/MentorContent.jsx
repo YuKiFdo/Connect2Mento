@@ -1,5 +1,6 @@
 import React from 'react'
 import './MentorContent.css'
+import secimage1 from '../../../Images/pexels-mikhail-nilov-8871860.png'
 
 
 const MentorContent = () => {
@@ -8,7 +9,7 @@ const MentorContent = () => {
         name: 'Saman Premechandra',
         title: 'Lead Front-end Developer',
         skills: ['React', 'TypeScript', 'Web Development'],
-        image: 'pexels-mikhail-nilov-8871860.png',
+        image: {secimage1},
       },
       {
         name: 'Saman Premechandra',

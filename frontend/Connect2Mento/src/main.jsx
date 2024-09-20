@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import LoginConnection from './Connection/LoginConnection.jsx'
 import SignupContent from './Connection/SignupContent.jsx'
+import BrowseAll from './Connection/BrowseAll.jsx'
 
 
 import{
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path:"/signup",
     element: <SignupContent />
+  },
+  {
+    path:"/browse",
+    element: <BrowseAll />
   },
   
 ]);

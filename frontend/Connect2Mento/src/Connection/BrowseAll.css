@@ -1,0 +1,127 @@
+.top-part{
+
+    display: flex;
+}
+
+.Mentors{
+
+    display: flex;
+    margin-bottom: 50px;
+    
+    
+    
+}
+.left-mentor, .right-mentor{
+
+
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #b4b4b4;
+    margin: 10px 20px 0px 20px ;
+    border-radius: 8px;
+}
+
+.top-left, .top-right{
+
+    width: 50%;
+  
+}
+
+.name{
+
+    font-size: 26px;
+    font-family: sans-serif;
+    color: #023650;
+}
+.skill{
+
+    color: #158D7F;
+}
+.position{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.skill{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.top-right{
+
+    line-height: 8px;
+    padding: 20px;
+}
+.top-left{
+
+    width: 200px;
+    height: 200px;
+}
+
+.top-left img {
+
+    width: 200px;
+    height: 200px;
+}
+
+.bottom-part{    
+    padding: 20px 20px 0px 0px;
+}
+
+.bottom-top{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    
+}
+
+.bottom-top, .bottom-middle{
+
+    line-height: 20px;
+}
+.bottom-middle, .bottom-last{
+
+    display: flex;
+}
+.bottom-middle{
+    color: rgb(88, 88, 88);
+    font-size: 18px;
+}
+
+
+.bottom-last-left, .bottom-last-right{
+
+    width: 50%;
+}
+
+.bottom-last-left{
+
+    font-size: 30px;
+}
+
+.bottom-last-right{
+
+    
+}
+.findbtn {
+    margin-top: 20px;
+    padding: 10px;
+    width: 250px;
+    height: 41px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(21,141,127,1);
+    top: 668px;
+    left: 900px;
+    font-family: Source Serif Pro;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }

@@ -18,7 +18,7 @@ function HeaderContent() {
         </div>
 
         <div id="navsecond">
-          <a href="#browse" className="browse-btn">Brows All Mentors</a>
+          <a href="/browse" className="browse-btn">Brows All Mentors</a>
           <a href="/login" className="login">Login</a>
         </div>
     </div>

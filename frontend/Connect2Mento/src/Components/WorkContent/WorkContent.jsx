@@ -1,5 +1,8 @@
 import React from 'react'
 import './WorkContent.css'
+import image1 from '../../../Images/Test image.jpg'
+import image2 from '../../../Images/download.jpeg'
+
 
 function WorkContent() {
   return (
@@ -18,13 +21,14 @@ function WorkContent() {
             </div>
 
             <div class="work-first-right">
-               <div class="image"> <img src="Test image.jpg" alt=""/></div> 
+               <div class="image"><img src={image1} id="image1" alt="logo" />
+               </div> 
             </div>
         </div>
 
         <div class="work-two">
             <div class="work-two-left">
-                <img src="download.jpeg" alt=""/>
+                <img src={image2} id="image2" alt="logo" />
             </div>
 
             <div class="work-two-right">
@@ -52,13 +56,13 @@ function WorkContent() {
                 </div>
             </div>
             <div class="work-three-right">
-                <img src="download.jpeg" alt=""/> 
+            <img src={image2} id="image2" alt="logo" />
             </div>
         </div>
 
         <div class="work-four">
             <div class="work-four-left">
-                <img src="download.jpeg" alt=""/>
+            <img src={image2} id="image2" alt="logo" />
                
             </div>
             <div class="work-four-right">
