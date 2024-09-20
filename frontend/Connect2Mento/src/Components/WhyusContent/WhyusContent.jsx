@@ -3,31 +3,31 @@ import './WhyusContent.css'
 
 function WhyusContent() {
   return (
-    <div class="v291_591">
+    <div class="content">
         
-        <div class="v291_592"></div>
+        <div class="firstbox"></div>
         
-        <div class="v291_593"></div>
+        <div class="secondbox"></div>
         
-        <div class="v291_594"></div>
+        <div class="image1"></div>
         
-        <div class="v291_595"></div>
+        <div class="thirdbox"></div>
         
-        <div class="v291_596"></div>
+        <div class="fourthbox">
+          <img src='15 Map and Navigation Icons.jpeg' class="image2" alt=""/>
+        </div>
         
-        <span class="v291_597"> Video & Text Conversation</span>
+        <span class="firstboxtitle"> Video & Text Conversation</span>
         
-        <div class="v291_598"></div>
+        <span class="secondboxtitle"> 24 / 7 Service</span>
         
-        <span class="v291_599"> 24 / 7 Service</span>
+        <span class="fourthboxtitle">Accesses from any  Location</span>
         
-        <span class="v291_600">Accesses from any  Location</span>
+        <span class="thirdhboxtitle">The Meeting can<br/> be held at <br/>a convenient time for you</span>
         
-        <span class="v291_601">The Meeting can<br/> be held at <br/>a convenient time for you</span>
+        <span class="maintit">Unlock Your Potential with Personalized Mentoring Solutions!</span>
         
-        <span class="v291_602">Unlock Your Potential with Personalized Mentoring Solutions!</span>
-        
-        <span class="v291_603">"Empowering learners with expert guidance anytime, anywhere. Connect, learn, and grow with personalized online mentoring sessions."</span>
+        <span class="mainp">"Empowering learners with expert guidance anytime, anywhere. Connect, learn, and grow with personalized online mentoring sessions."</span>
     
     </div>
 

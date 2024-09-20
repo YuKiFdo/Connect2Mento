@@ -6,7 +6,7 @@
   }
   .loginview{
     width: 100%;
-    height: 730px;
+    height: 835px;
     background: rgba(2,54,80,1);
     opacity: 1;
     position: relative;
@@ -15,13 +15,13 @@
     overflow: hidden;
   }
   .log{
-    width: 899px;
-    height: 730px;
+    width: 100%;
+    height: 835px;
     background: rgba(249,249,249,1);
     opacity: 1;
     position: relative;
     top: 0px;
-    left: 630px;
+    left: 500px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -34,7 +34,7 @@
     color: rgba(0,0,0,1);
     position: absolute;
     top: 73px;
-    left: 400px;
+    left: 650px;
     font-family: Inter;
     font-weight: Bold;
     font-size: 32px;
@@ -47,7 +47,7 @@
     opacity: 1;
     position: absolute;
     top: 164px;
-    left: 850px;
+    left: 450px;
     overflow: hidden;
   }
 
@@ -55,7 +55,7 @@
     opacity: 1;
     position: absolute;
     top: 250px;
-    left: 850px;
+    left: 450px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -88,45 +88,27 @@
   border-radius: 10px;
   
 }
-
-  .v291_13 {
-    width: 45px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 398px;
-    left: 1110px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 15px;
-    opacity: 1;
+  .forogot{
+    font-size: 16px;
     text-align: left;
-  }
-  .forgotpasswordname{
-    width: 241px;
-    color: rgba(164,164,164,1);
-    position: absolute;
-    top: 325px;
-    left: 852px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 14px;
+    color: lightslategrey;
     opacity: 1;
-    text-align: left;
+    position: absolute;
+    top: 70px;
+    left: 0px;
   }
-  .name {
-    color: #fff;
-  }
+  
   .loginwithtitle{
     position: absolute;
     top: 446px;
-    left: 1050px;
+    left: 450px;
   }
   .loginwith {
     width: 120px;
     color: gray;
     position: absolute;
     top: 5px;
-    left: 0px;
+    left: 170px;
     font-family: Inter;
     font-weight: Medium;
     font-size: 20px;
@@ -136,7 +118,7 @@
     color: rgba(75,75,75,1);
     position: absolute;
     top: 600px;
-    left: 859px;
+    left: 450px;
     font-family: Inter;
     font-weight: Medium;
     font-size: 16px;
@@ -147,8 +129,8 @@
     width: 52px;
     color: rgba(2,48,71,1);
     position: absolute;
-    top: 600px;
-    left: 1050px;
+    top: 603px;
+    left: 625px;
     font-family: Inter;
     font-weight: Bold;
     font-size: 14px;
@@ -167,7 +149,7 @@
     opacity: 1;
     position: absolute;
     top: 496px;
-    left: 940px;
+    left: 550px;
     overflow: hidden;
   }
   .googword {
@@ -175,7 +157,7 @@
     color: rgba(75,75,75,1);
     position: absolute;
     top: 505px;
-    left: 990px;
+    left: 590px;
     font-family: Inter;
     font-weight: Regular;
     font-size: 15px;
@@ -187,7 +169,7 @@
     color: rgba(75,75,75,1);
     position: absolute;
     top: 505px;
-    left: 1210px;
+    left: 790px;
     font-family: Inter;
     font-weight: Regular;
     font-size: 15px;
@@ -204,7 +186,7 @@
     opacity: 1;
     position: absolute;
     top: 496px;
-    left: 1155px;
+    left: 750px;
     overflow: hidden;
   }
 
@@ -213,7 +195,7 @@
     color: rgba(255,255,255,1);
     position: absolute;
     top: 398px;
-    left: 850px;
+    left: 450px;
     font-family: Inter;
     font-weight: Medium;
     font-size: 15px;

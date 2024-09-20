@@ -1,0 +1,35 @@
+.Features{
+    background-color: #023650;
+    display: flex;
+    margin: 5px 121px 121px 121px;
+  }
+
+  .feature-one,.feature-three{
+
+    width: 33%;
+    padding: 40px 80px 40px 80px;
+  }
+
+  .feature-two{
+
+    width: 33%;
+    padding: 40px 0px 40px 0px;
+  }
+  .feature-one-top, .feature-two-top, .feature-three-top{
+
+    color: #F9F9F9;
+    font-size: 28px;
+    font-family: Source Serif Pro;
+    font-weight: 400;
+
+  }
+
+  .feature-one-bottom, .feature-two-bottom, .feature-three-bottom{
+
+    color: #F9F9F9;
+    font-size: 18px;
+    font-family: Source Serif Pro;
+    font-weight: 400;
+    
+
+  }

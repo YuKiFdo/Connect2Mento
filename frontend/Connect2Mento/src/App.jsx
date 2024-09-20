@@ -6,16 +6,21 @@ import AchieveContent from './Components/AchieveContent/AchieveContent'
 import ImageContent from './Components/ImageContent/ImageContent'
 import LoginConnection from './Connection/LoginConnection'
 import WhyusContent from './Components/WhyusContent/WhyusContent'
+import MentorContent from './Components/Mentors/MentorContent'
+import WorkContent from './Components/WorkContent/WorkContent'
+import FeaturesContent from './Components/FeaturesContent/FeaturesContent'
 
 
 function App() {
   return (
     <div id ="wrapper">
       <HeaderContent/>
-      {/* <ImageContent/> */}
       <BodyContent/>
       <AchieveContent/>
       <WhyusContent/>
+      <MentorContent/>
+      <WorkContent/>
+      <FeaturesContent/>
       
       <FooterContent/>
     </div>

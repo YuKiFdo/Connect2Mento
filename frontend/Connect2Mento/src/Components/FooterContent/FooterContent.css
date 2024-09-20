@@ -3,8 +3,9 @@
 }
 body {
   font-size: 14px;
+  padding: 30px 50px;
 }
-.v291_432 {
+.footercontent {
   width: 100%;
   height: 488px;
   background-repeat: no-repeat;
@@ -12,13 +13,14 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 2440px;
+  top: 6000px;
   left: 0px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
-.v291_433 {
+.details {
   width: 100%;
-  height: 488px;
+  height: 45rem;
   background: rgba(189,189,189,1);
   opacity: 1;
   position: absolute;
@@ -26,7 +28,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v291_434 {
+.mento {
   width: 172px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -35,8 +37,9 @@ body {
   font-size: 24px;
   opacity: 1;
   text-align: left;
+  margin-left: 30px;
 }
-.v291_435 {
+.explor {
   width: 102px;
   color: rgba(57,55,55,1);
   position: absolute;
@@ -47,8 +50,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 50px;
 }
-.v291_436 {
+.know {
   width: 139px;
   color: rgba(57,55,55,1);
   position: absolute;
@@ -59,8 +63,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 175px;
 }
-.v291_437 {
+.reso {
   width: 114px;
   color: rgba(57,55,55,1);
   position: absolute;
@@ -71,8 +76,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 290px;
 }
-.v291_438 {
+.sup {
   width: 114px;
   color: rgba(57,55,55,1);
   position: absolute;
@@ -83,8 +89,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 400px;
 }
-.v291_439 {
+.brows {
   width: 157px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -95,8 +102,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 50px;
 }
-.v291_440 {
+.about {
   width: 64px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -107,8 +115,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 175px;
 }
-.v291_441 {
+.case {
   width: 116px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -119,8 +128,10 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 290px;
 }
-.v291_442 {
+
+.faq {
   width: 52px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -131,8 +142,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 400px;
 }
-.v291_443 {
+.cantac {
   width: 75px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -143,8 +155,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 400px;
 }
-.v291_444 {
+.book {
   width: 157px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -155,8 +168,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 50px;
 }
-.v291_445 {
+.partner {
   width: 172px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -167,8 +181,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 175px;
 }
-.v291_446 {
+.books {
   width: 70px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -179,8 +194,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 290px;
 }
-.v291_447 {
+.become {
   width: 168px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -191,8 +207,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 50px;
 }
-.v291_448 {
+.privacy {
   width: 139px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -203,8 +220,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 175px;
 }
-.v291_449 {
+.career {
   width: 139px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -215,8 +233,9 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 290px;
 }
-.v291_450 {
+.blog {
   width: 63px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -227,9 +246,10 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 290px;
 }
 
-.v291_451 {
+.test {
   width: 145px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -240,13 +260,15 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  margin-left: 50px;
 }
 
-.v291_452 {
+.utube {
   opacity: 1;
   position: absolute;
   top: 388px;
   left: 1140px;
+  margin-left: 250px;
 }
 
 .youtubeimg{
@@ -261,11 +283,12 @@ body {
   left: 10px;
 }
 
-.v291_454 {
+.facebook {
   opacity: 1;
   position: absolute;
   top: 388px;
   left: 1050px;
+  margin-left: 220px;
 }
 
 .facebookimg{
@@ -273,11 +296,12 @@ body {
   height: 60px;
 }
 
-.v291_455 {
+.twitter {
   opacity: 1;
   position: absolute;
   top: 400px;
   left: 978px;
+  margin-left: 180px;
 }
 
 .twitterimg{
@@ -290,6 +314,7 @@ body {
   position: absolute;
   top: 398px;
   left: 1230px;
+  margin-left: 275px;
 }
 
 .ximg{
@@ -312,10 +337,7 @@ body {
   height: 30px;
   border: none;
   border-radius: 5px;
-}
-
-.v291_453{
-  left: 85px;
+  margin-left: 110px;
 }
 
 

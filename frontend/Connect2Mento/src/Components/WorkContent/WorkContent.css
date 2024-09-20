@@ -1,0 +1,106 @@
+.How-it-work{
+
+    background-color: #E5F1F2;
+    margin: 5px 121px 121px 121px;
+}
+
+.work-first, .work-two, .work-three, .work-four{
+
+    display: flex;
+    padding: 50px 80px 50px 150px;
+    
+
+}
+
+.work-first-left-top, 
+.work-two-right-top, 
+.work-three-left-top, 
+.work-four-right-top{
+color: #023650;
+font-size: 25px;
+font-family: Source Serif Pro;
+font-weight: 400;
+}
+
+
+.work-first-left-bottom, 
+.work-two-right-bottom,
+ .work-three-left-bottom, 
+ .work-four-right-bottom{
+
+color: black;
+font-size: 18px;
+font-family: Source Serif Pro;
+font-weight: 400;
+width: 300px;
+
+}
+
+.work-first-left, .work-first-right, 
+.work-two-left, .work-two-right, 
+.work-three-left, .work-three-right, 
+.work-four-left, .work-four-right{
+
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.work-first-left, .work-two-right, .work-three-left, .work-four-right{
+
+    margin-top: 30px;
+}
+.work-two-right{
+
+    
+margin-left: 100px;
+
+
+}
+
+.work-first-right, .work-three-right{
+
+text-align: center;
+justify-content: center;
+    
+}
+
+
+.work-first-right img, 
+.work-three-right img, 
+.work-two-left img,
+ .work-four-left img{
+
+    width: 287px;
+    height: 287px;
+
+
+}
+
+.find-btn {
+    padding: 10px;
+    width: 133px;
+    height: 41px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(21,141,127,1);
+    margin-top: 45px;
+    top: 668px;
+    left: 900px;
+    font-family: Source Serif Pro;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  

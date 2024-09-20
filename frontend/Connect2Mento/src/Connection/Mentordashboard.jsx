@@ -1,15 +1,18 @@
 import React from 'react'
-import './MentorDashboardContent.css'
+import './Mentordashboard.css'
+import MentorHeader from '../Components/MentorHeader/MentorHeader'
 
-function MentorDashboardContent() {
+function Mentordashboard() {
   return (
+
     <div class="v340_139">
 
-        <div class="v340_140"></div>
+        
+    <MentorHeader/>
 
-        <div class="v340_146"></div>
+        <div class="imagecontainer"></div>
 
-        <div class="v340_147"></div>
+  
         
         <span class="v340_148">Sign out</span>
         
@@ -19,9 +22,7 @@ function MentorDashboardContent() {
             
             <div class="v340_157"></div>
             
-            <span class="v340_161">My Profile</span>
-            
-            <div class="v340_169"></div>
+            {/* <div class="v340_169"></div>
             
             <div class="v340_167"></div>
             
@@ -32,7 +33,7 @@ function MentorDashboardContent() {
                 <div class="v340_174"></div>
             
             </div>
-            
+             */}
             <span class="v340_176">Omar Rizwan</span>
             
             <div class="v306_153"></div>
@@ -95,4 +96,4 @@ function MentorDashboardContent() {
   )
 }
 
-export default MentorDashboardContent
+export default Mentordashboard

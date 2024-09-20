@@ -4,9 +4,9 @@
   body {
     font-size: 14px;
   }
-  .v291_3{
+  .back{
     width: 100%;
-    height: 730px;
+    height: 835px;
     background: rgba(2,54,80,1);
     opacity: 1;
     position: relative;
@@ -14,14 +14,14 @@
     left: 0px;
     overflow: hidden;
   }
-  .v291_4{
-    width: 899px;
-    height: 730px;
+  .blok{
+    width: 1405px;
+    height: 835px;
     background: rgba(249,249,249,1);
     opacity: 1;
     position: relative;
     top: 0px;
-    left: 630px;
+    left: 500px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -29,42 +29,24 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
   }
-  .v291_5{
+  .signtitle{
     width: 101px;
     color: rgba(0,0,0,1);
     position: absolute;
     top: 73px;
-    left: 400px;
+    left: 660px;
     font-family: Inter;
     font-weight: Bold;
     font-size: 32px;
     opacity: 1;
     text-align: left;
   }
-  .v291_6 {
-    opacity: 1;
-    position: absolute;
-    top: 183px;
-    left: 925px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    overflow: hidden;
-    
-  }
-  .v291_7 {
-    background: rgba(0,0,0,0);
-    opacity: 1;
-    position: absolute;
-    overflow: hidden;
-  }
   .emailfield {
     background: rgba(249,249,249,1);
     opacity: 1;
     position: absolute;
     top: 295px;
-    left: 850px;
+    left: 1000px;
     overflow: hidden;
   }
 
@@ -72,7 +54,7 @@
     opacity: 1;
     position: absolute;
     top: 375px;
-    left: 850px;
+    left: 1000px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -80,24 +62,11 @@
     overflow: hidden;
   }
 
-  .firstname{
-    width: 500px;
-    height: 30px;
-    border-color: black;
-    border-radius: 10px;
-  }
-  
-.firstnametitle{
-  font-size: 16px;
-  text-align: left;
-  
-}
-
 .lastnamefield{
     opacity: 1;
     position: absolute;
     top: 215px;
-    left: 850px;
+    left: 1000px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -141,20 +110,6 @@
   border-radius: 10px;
 }
 
-
-.passwordtitle{
-  font-size: 16px;
-  text-align: left;
-}
-
-.password{
-  width: 500px;
-  height: 30px;
-  border-color: black;
-  border-radius: 10px;
-  
-}
-
 .firstnamefield{
     opacity: 1;
     position: absolute;
@@ -164,36 +119,10 @@
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    overflow: hidden;    
+    overflow: hidden; 
+    left: 1000px;   
 }
 
-  .v291_13 {
-    width: 45px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 398px;
-    left: 1110px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-  }
-  .forgotpasswordname{
-    width: 241px;
-    color: rgba(164,164,164,1);
-    position: absolute;
-    top: 325px;
-    left: 852px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 14px;
-    opacity: 1;
-    text-align: left;
-  }
-  .name {
-    color: #fff;
-  }
   .signupwithtitle{
     position: absolute;
     top: 510px;
@@ -204,7 +133,7 @@
     color: gray;
     position: absolute;
     top: 5px;
-    left: 0px;
+    left: 150px;
     font-family: Inter;
     font-weight: Medium;
     font-size: 17px;
@@ -215,7 +144,7 @@
     color: rgba(75,75,75,1);
     position: absolute;
     top: 650px;
-    left: 858px;
+    left: 1000px;
     font-family: Inter;
     font-weight: Medium;
     font-size: 16px;
@@ -226,8 +155,8 @@
     width: 52px;
     color: rgba(2,48,71,1);
     position: absolute;
-    top: 650px;
-    left: 1050px;
+    top: 652px;
+    left: 1190px;
     font-family: Inter;
     font-weight: Bold;
     font-size: 14px;
@@ -246,7 +175,7 @@
     opacity: 1;
     position: absolute;
     top: 575px;
-    left: 940px;
+    left: 1100px;
     overflow: hidden;
   }
   .googleword {
@@ -254,7 +183,7 @@
     color: rgba(75,75,75,1);
     position: absolute;
     top: 583px;
-    left: 990px;
+    left: 1150px;
     font-family: Inter;
     font-weight: Regular;
     font-size: 15px;
@@ -266,7 +195,7 @@
     color: rgba(75,75,75,1);
     position: absolute;
     top: 583px;
-    left: 1210px;
+    left: 1380px;
     font-family: Inter;
     font-weight: Regular;
     font-size: 15px;
@@ -283,7 +212,7 @@
     opacity: 1;
     position: absolute;
     top: 575px;
-    left: 1155px;
+    left: 1325px;
     overflow: hidden;
   }
 
@@ -292,7 +221,7 @@
     color: rgba(255,255,255,1);
     position: absolute;
     top: 465px;
-    left: 850px;
+    left: 1000px;
     font-family: Inter;
     font-weight: Medium;
     font-size: 15px;

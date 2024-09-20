@@ -8,20 +8,11 @@ function SignupContent() {
     <div id="wrapper">
         <HeaderContent/> 
 
-    <div class="v291_3">
-            <div class="v291_4">
-              <span class="v291_5">SignUp</span>
+    <div class="back">
+            <div class="blok">
+              <span class="signtitle">SignUp</span>
             </div>
-            
-            
-            <div class="v291_6">
-              
-            </div>
-            
-            <div class="v291_7">
-              
-            </div>
-
+          
             <div class="firstnamefield">
                 <p class="firstnametitle">First Name</p>
                 <div className="searchbar">
@@ -60,9 +51,6 @@ function SignupContent() {
                     className="password"
                   />
                 </div>
-            </div>
-            
-            <div class="v291_12">
             </div>
             
             <div class='signupbutton'>

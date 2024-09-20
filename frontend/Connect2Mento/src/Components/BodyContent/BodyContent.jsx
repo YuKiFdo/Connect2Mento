@@ -34,10 +34,10 @@ function BodyContent() {
             <span className="tag">Career Coaches</span>
           </div>
           
-    </div>
-     
-        
+    </div>    
     </section>
+
+    
 
     
     

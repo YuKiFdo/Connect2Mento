@@ -14,7 +14,7 @@
     left: 0px;
     overflow: hidden;
   }
-  .v340_140 {
+  .imagecontainer {
     width: 797px;
     height: 900px;
     background: url("../images/v340_140.png");
@@ -32,7 +32,7 @@
     border-bottom-right-radius: 20px;
     overflow: hidden;
   }
-  .v340_146 {
+  .dashboardpage {
     width: 100%;
     height: 71px;
     background: url("../images/v340_146.png");

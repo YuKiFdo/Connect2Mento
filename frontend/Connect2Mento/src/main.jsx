@@ -5,6 +5,7 @@ import './index.css'
 import LoginConnection from './Connection/LoginConnection.jsx'
 import SignupContent from './Connection/SignupContent.jsx'
 
+
 import{
   createBrowserRouter,
   RouterProvider,
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
     path:"/signup",
     element: <SignupContent />
   },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

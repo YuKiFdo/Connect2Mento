@@ -26,10 +26,10 @@ const GroupedColumnChart = () => {
     const data = getDatum();
 
     const isSmallScreen = window.matchMedia('(max-width: 1024px)').matches;
-    const customWidth = isSmallScreen ? 300 : 480;
+    const customWidth = isSmallScreen ? 400 : 1550;
     const margin = { top: 20, right: 20, bottom: 40, left: 40 };
     const width = customWidth - margin.left - margin.right;
-    const height = 300 - margin.top - margin.bottom;
+    const height = 500 - margin.top - margin.bottom;
 
     const svg = d3
       .select('#multi-chart')

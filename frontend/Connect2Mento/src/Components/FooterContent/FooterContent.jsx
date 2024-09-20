@@ -4,32 +4,32 @@ import './FooterContent.css'
 function FooterContent() {
   return (
 
-  <div class="v291_432">
-            <div class="v291_433">
-            </div>
+  <div class="footercontent">
+            <div class="details">
+
+            <p class="mento">Mentoconnect </p>
+            <p class="explor">Explore</p>
+            <p class="know">KnowMore</p>
+            <p class="reso">Resources</p>
+            <p class="sup">Support</p>
+            <p class="brows">Brows Mentor</p>
+            <p class="about">About</p>
+            <p class="case">Case Studies</p>
+            <p class="faq">FAQ</p>
+            <p class="cantac">Contact</p>
+            <p class="book">Book a session</p>
+            <p class="partner">Partner Programs</p>
+            <p class="books">Books</p>
+            <p class="become">Become a mentor</p>
+            <p class="privacy">Privacy Policy</p>
+            <p class="career">Career Path</p>
+            <p class="blog">Blogs</p>
+            <p class="test">Testimonial</p>
             
-            <span class="v291_434">Mentoconnect </span>
-            <span class="v291_435">Explore</span>
-            <span class="v291_436">KnowMore</span>
-            <span class="v291_437">Resources</span>
-            <span class="v291_438">Support</span>
-            <span class="v291_439">Brows Mentor</span>
-            <span class="v291_440">About</span>
-            <span class="v291_441">Case Studies</span>
-            <span class="v291_442">FAQ</span>
-            <span class="v291_443">Contact</span>
-            <span class="v291_444">Book a session</span>
-            <span class="v291_445">Partner Programs</span>
-            <span class="v291_446">Books</span>
-            <span class="v291_447">Become a mentor</span>
-            <span class="v291_448">Privacy Policy</span>
-            <span class="v291_449">Career Path</span>
-            <span class="v291_450">Blogs</span>
-            <span class="v291_451">Testimonial</span>
             
-            <div class="v291_452">
-            <img  class="youtubeimg" src='./images/youtube.png' alt="youtube"></img>
-            </div>
+
+
+            
             
             <div class="v291_453">
                 <div className="searchbar">
@@ -41,17 +41,25 @@ function FooterContent() {
             </div>
             </div>
             
-            <div class="v291_454">
+            <div class="facebook">
             <img  class="facebookimg" src='./images/facebook.png' alt="facebook"></img>
             </div>
             
-            <div class="v291_455">
+            <div class="twitter">
               <img  class="twitterimg" src='./images/twitter.png' alt="twitter"></img>
             </div>
 
             <div class="xdiv">
               <img  class="ximg" src='./images/x.png' alt="x"></img>
             </div>
+
+            <div class="utube">
+            <img  class="youtubeimg" src='./images/youtube.png' alt="youtube"></img>
+            </div>
+
+            </div>
+            
+            
         </div>
 
 
