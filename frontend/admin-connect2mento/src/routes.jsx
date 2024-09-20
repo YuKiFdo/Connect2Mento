@@ -52,8 +52,23 @@ const routes = [
     routes: [
       {
         exact: 'true',
-        path: '/app/dashboard/default',
+        path: '/admin/dashboard',
         element: lazy(() => import('./views/dashboard'))
+      },
+      {
+        exact: 'true',
+        path: '/admin/mentor/view',
+        element: lazy(() => import('./views/mentor/viewmentor'))
+      },
+      {
+        exact: 'true',
+        path: '/admin/mentor/application',
+        element: lazy(() => import('./views/mentor/mentorapplication'))
+      },
+      {
+        exact: 'true',
+        path: '/admin/Mentee',
+        element: lazy(() => import('./views/Mentee'))
       },
       {
         exact: 'true',

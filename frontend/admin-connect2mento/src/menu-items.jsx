@@ -11,10 +11,42 @@ const menuItems = {
           title: 'Dashboard',
           type: 'item',
           icon: 'feather icon-home',
-          url: '/app/dashboard/default'
+          url: '/admin/dashboard'
+        },
+        {
+          id: 'mentee',
+          title: 'View All Mentees',
+          type: 'item',
+          icon: 'feather icon-file-text',
+          url: '/admin/Mentee'
+        },
+    
+      ]
+    },
+
+    {
+      id: 'mentor-section',
+      title: 'Mentor',
+      type: 'group',
+      icon: 'icon-ui',
+      children: [
+        {
+          id: 'view-mentor',
+          title: 'View Mentors',
+          type: 'item',
+          icon: 'feather icon-book',
+          url: '/admin/mentor/view'
+        },
+        {
+          id: 'mentor-application',
+          title: 'Mentor Application',
+          type: 'item',
+          icon: 'feather icon-book',
+          url: '/admin/mentor/application'
         }
       ]
     },
+
     {
       id: 'ui-element',
       title: 'UI ELEMENT',
