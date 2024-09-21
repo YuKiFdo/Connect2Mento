@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Card, Button, Alert } from 'react-bootstrap';
 import { NavLink, Link } from 'react-router-dom';
 
@@ -10,6 +11,15 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import AuthLogin from './JWTLogin';
 
 const Signin1 = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('jwtToken');
+    if (token) {
+      navigate('/admin/dashboard'); 
+    }
+  }, [navigate]);
+
   return (
     <React.Fragment>
       <Breadcrumb />
@@ -27,12 +37,6 @@ const Signin1 = () => {
                 <i className="feather icon-unlock auth-icon" />
               </div>
               <AuthLogin />
-              <p className="mb-2 text-muted">
-                Forgot password?{' '}
-                <NavLink to={'#'} className="f-w-400">
-                  Click here
-                </NavLink>
-              </p>
             </Card.Body>
           </Card>
         </div>

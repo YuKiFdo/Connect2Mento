@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, ListGroup, Dropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PerfectScrollbar from 'react-perfect-scrollbar';
-
 import ChatList from './ChatList';
-
-import avatar1 from '../../../../assets/images/user/avatar-1.jpg';
-import main_logo from '../../../../assets/images/iconc2m.png'
-import avatar2 from '../../../../assets/images/user/avatar-2.jpg';
-import avatar3 from '../../../../assets/images/user/avatar-3.jpg';
-import avatar4 from '../../../../assets/images/user/avatar-4.jpg';
+import axios from 'axios';
+import main_logo from '../../../../assets/images/iconc2m.png';
 
 const NavRight = () => {
   const [listOpen, setListOpen] = useState(false);
+  const [redirect, setRedirect] = useState(false);
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
 
   const notiData = [
     {
@@ -20,8 +18,36 @@ const NavRight = () => {
       image: main_logo,
       details: 'New update has been released for Mentor applications',
       activity: '30 min'
-    },
+    }
   ];
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      const token = localStorage.getItem('jwtToken');
+      if (token) {
+        try {
+          const response = await axios.get('http://localhost:8080/user', {
+            headers: { Authorization: `Bearer ${token}` }
+          });
+          setUser(response.data);
+        } catch (error) {
+          console.error('Error fetching user data:', error);
+        }
+      }
+    };
+
+    fetchUserData();
+  }, []);
+
+  const handleLogout = () => {
+    console.log('Logout');
+    localStorage.removeItem('jwtToken');
+    setRedirect(true);
+  };
+
+  if (redirect) {
+    navigate('/login');
+  }
 
   return (
     <React.Fragment>
@@ -47,28 +73,25 @@ const NavRight = () => {
                     <p className="m-b-0">NEW</p>
                   </ListGroup.Item>
                   <ListGroup.Item as="li" bsPrefix=" " className="notification">
-                  {notiData.map((data, index) => {
-                    return (
-                      <ListGroup.Item key={index} as="li" bsPrefix=" " className="notification">
-                        <Card
-                          className="d-flex align-items-center shadow-none mb-0 p-0"
-                          style={{ flexDirection: 'row', backgroundColor: 'unset' }}
-                        >
-                          <img className="img-radius" src={data.image} alt="Generic placeholder" />
-                          <Card.Body className="p-0">
-                            <p>
-                              <strong>{data.name}</strong>
-                              <span className="n-time text-muted">
-                                <i className="icon feather icon-clock me-2" />
-                                {data.activity}
-                              </span>
-                            </p>
-                            <p>{data.details}</p>
-                          </Card.Body>
-                        </Card>
-                      </ListGroup.Item>
-                    );
-                  })}
+                    {notiData.map((data, index) => (
+                      <Card
+                        key={index}
+                        className="d-flex align-items-center shadow-none mb-0 p-0"
+                        style={{ flexDirection: 'row', backgroundColor: 'unset' }}
+                      >
+                        <img className="img-radius" src={data.image} alt="Generic placeholder" />
+                        <Card.Body className="p-0">
+                          <p>
+                            <strong>{data.name}</strong>
+                            <span className="n-time text-muted">
+                              <i className="icon feather icon-clock me-2" />
+                              {data.activity}
+                            </span>
+                          </p>
+                          <p>{data.details}</p>
+                        </Card.Body>
+                      </Card>
+                    ))}
                   </ListGroup.Item>
                 </ListGroup>
               </PerfectScrollbar>
@@ -85,24 +108,23 @@ const NavRight = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu align="end" className="profile-notification">
               <div className="pro-head">
-                <img src={main_logo} className="img-radius" alt="User Profile" />
-                <span>Shehal Herath</span>
-                <Link to="#" className="dud-logout" title="Logout">
+                {user && user.avatar && <a href="https://ibb.co/VSwNC5v"><img src={user.avatar} className="img-radius" alt="User Profile" /> </a>}
+                <span>{user ? user.name : 'Loading...'}</span>
+                <Link to="#" className="dud-logout" title="Logout" onClick={handleLogout}>
                   <i className="feather icon-log-out" />
                 </Link>
               </div>
               <ListGroup as="ul" bsPrefix=" " variant="flush" className="pro-body">
                 <ListGroup.Item as="li" bsPrefix=" ">
-                <ListGroup.Item as="li" bsPrefix=" ">
                   <Link to="#" className="dropdown-item">
                     <i className="feather icon-user" /> Profile
                   </Link>
                 </ListGroup.Item>
+                <ListGroup.Item as="li" bsPrefix=" ">
                   <Link to="#" className="dropdown-item">
                     <i className="feather icon-settings" /> Settings
                   </Link>
                 </ListGroup.Item>
-          
               </ListGroup>
             </Dropdown.Menu>
           </Dropdown>
