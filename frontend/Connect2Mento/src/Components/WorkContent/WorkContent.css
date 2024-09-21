@@ -33,6 +33,7 @@ font-size: 18px;
 font-family: Source Serif Pro;
 font-weight: 400;
 width: 300px;
+margin-left: 180px;
 
 }
 
@@ -101,6 +102,10 @@ justify-content: center;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+
+  .find-btn:hover{
+    background-color: #025a53;
   }
 
   

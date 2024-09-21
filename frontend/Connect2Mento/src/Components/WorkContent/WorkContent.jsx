@@ -1,7 +1,13 @@
 import React from 'react'
 import './WorkContent.css'
-import image1 from '../../../Images/Test image.jpg'
-import image2 from '../../../Images/download.jpeg'
+import image1 from '../../../Images/pexels-olly-3831890.jpg'
+import image2 from '../../../Images/pexels-ketut-subiyanto-4126724.jpg'
+import image3 from '../../../Images/pexels-olly-3865577.jpg'
+import image4 from '../../../Images/pexels-mikhail-nilov-6930579.jpg'
+
+
+
+
 
 
 function WorkContent() {
@@ -14,21 +20,20 @@ function WorkContent() {
                     <span>Explore Our Plateform</span>
                 </div>
                 <div class="work-first-left-bottom">
-                    <span>Look around our website to see all the 
-                        mentors and services we offer. You can browse by category,
+                    <span>Look around our website to see all the mentors and services we offer. You can browse by category,
                          skills, or your personal needs.</span>
                 </div>
             </div>
 
             <div class="work-first-right">
-               <div class="image"><img src={image1} id="image1" alt="logo" />
+               <div class="image"><img src={image2} id="image1" alt="logo" />
                </div> 
             </div>
         </div>
 
         <div class="work-two">
             <div class="work-two-left">
-                <img src={image2} id="image2" alt="logo" />
+                <img src={image4} id="image2" alt="logo" />
             </div>
 
             <div class="work-two-right">
@@ -56,13 +61,13 @@ function WorkContent() {
                 </div>
             </div>
             <div class="work-three-right">
-            <img src={image2} id="image2" alt="logo" />
+            <img src={image3} id="image2" alt="logo" />
             </div>
         </div>
 
         <div class="work-four">
             <div class="work-four-left">
-            <img src={image2} id="image2" alt="logo" />
+            <img src={image1} id="image2" alt="logo" />
                
             </div>
             <div class="work-four-right">

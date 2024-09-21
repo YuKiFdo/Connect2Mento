@@ -28,7 +28,7 @@ function AchieveContent() {
 
         </div>
 
-        <button class="findbtn">Find a Mentor</button>
+        <button class="btn">Find a Mentor</button>
 
 </div>
 
