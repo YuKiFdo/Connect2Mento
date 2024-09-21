@@ -1,11 +1,15 @@
 import React from 'react'
 import './WhyusContent.css'
+import WhyusContentfirstimage from '../../../Images/15 Map and Navigation Icons.jpeg'
+import WhyusContentsecimage from '../../../Images/pexels-kindelmedia-6994284.jpg'
 
 function WhyusContent() {
   return (
     <div class="content">
         
-        <div class="firstbox"></div>
+        <div class="firstbox">
+        <img src={WhyusContentsecimage} id="WhyusContentsecimage" alt="WhyusContentsecimage" />
+        </div>
         
         <div class="secondbox"></div>
         
@@ -14,7 +18,7 @@ function WhyusContent() {
         <div class="thirdbox"></div>
         
         <div class="fourthbox">
-          <img src='15 Map and Navigation Icons.jpeg' class="image2" alt=""/>
+        <img src={WhyusContentfirstimage} id="WhyusContentfirstimage" alt="WhyusContentfirstimage" />
         </div>
         
         <span class="firstboxtitle"> Video & Text Conversation</span>

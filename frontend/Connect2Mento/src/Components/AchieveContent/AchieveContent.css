@@ -58,7 +58,6 @@ body {
   position: absolute;
   top: 401px;
   left: 300px;
-  font-family: Inter;
   font-weight: Semi Bold;
   font-size: 21px;
   opacity: 1;
@@ -91,7 +90,6 @@ body {
   position: absolute;
   top: 445px;
   left: 300px;
-  font-family: Source Serif Pro;
   font-weight: Regular;
   font-size: 18px;
   opacity: 1;
@@ -103,7 +101,6 @@ body {
   position: absolute;
   top: 197px;
   left: 300px;
-  font-family: Source Serif Pro;
   font-weight: Regular;
   font-size: 18px;
   opacity: 1;
@@ -115,7 +112,6 @@ body {
   position: absolute;
   top: 200px;
   left: 1050px;
-  font-family: Source Serif Pro;
   font-weight: Regular;
   font-size: 18px;
   opacity: 1;
@@ -127,7 +123,6 @@ body {
   position: absolute;
   top: 448px;
   left: 1050px;
-  font-family: Source Serif Pro;
   font-weight: Regular;
   font-size: 18px;
   opacity: 1;
@@ -135,30 +130,29 @@ body {
 }
 
 
-.findbtn {
+.btn {
   padding: 10px;
-  width: 133px;
-  height: 41px;
-  color: rgba(255,255,255,1);
-  background-color: rgba(21,141,127,1);
-  position: absolute;
-  top:680px;
-  left: 850px;
-  font-family: Source Serif Pro;
-  font-weight: Regular;
-  font-size: 16px;
-  opacity: 1;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  overflow: hidden;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    width: 130px;
+    height: 41px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(21,141,127,1);
+    margin-top: 45px;
+    top: 668px;
+    left: 900px;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.findbtn:hover{
+.btn:hover{
   background-color: #025a53;
 }

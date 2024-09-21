@@ -12,8 +12,6 @@
     
 }
 .left-mentor, .right-mentor{
-
-
     padding: 20px 20px 20px 20px;
     border: 1px solid #b4b4b4;
     margin: 10px 20px 0px 20px ;
@@ -85,13 +83,14 @@
 
     display: flex;
 }
-.bottom-middle{
-    color: rgb(88, 88, 88);
-    font-size: 18px;
+
+
+.bottom-last-left{
+    width: 50%;
+    margin-top: 20px;
 }
 
-
-.bottom-last-left, .bottom-last-right{
+.bottom-last-right{
 
     width: 50%;
 }
