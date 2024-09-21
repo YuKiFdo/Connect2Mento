@@ -1,13 +1,13 @@
-package com.connect2mento.development;
+package com.connect2mento.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Connect2MentoApplication {
+public class AdminConnect2MentoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Connect2MentoApplication.class, args);
+		SpringApplication.run(AdminConnect2MentoApplication.class, args);
 	}
 
 }

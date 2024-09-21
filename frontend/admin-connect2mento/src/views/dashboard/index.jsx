@@ -8,9 +8,9 @@ import avatar2 from '../../assets/images/user/avatar-2.jpg';
 import avatar3 from '../../assets/images/user/avatar-3.jpg';
 
 const dashSalesData = [
-  { title: 'Daily Incomees', amount: '$249.95', icon: 'icon-arrow-up text-c-green', value: 50, class: 'progress-c-theme' },
-  { title: 'Monthly Income', amount: '$2.942.32', icon: 'icon-arrow-down text-c-red', value: 36, class: 'progress-c-theme2' },
-  { title: 'Yearly Income', amount: '$8.638.32', icon: 'icon-arrow-up text-c-green', value: 70, color: 'progress-c-theme' }
+  { title: 'Total Mentor Count', amount: '15', icon: 'icon-arrow-up text-c-green' },
+  { title: 'Total Members Count', amount: '124', icon: 'icon-arrow-down text-c-red'},
+  { title: 'Monthly Revenue', amount: 'LKR. 24,000.00', icon: 'icon-arrow-up text-c-green' }
 ];
 
 const DashDefault = () => {
@@ -31,22 +31,9 @@ const DashDefault = () => {
                   <div className="row d-flex align-items-center">
                     <div className="col-9">
                       <h3 className="f-w-300 d-flex align-items-center m-b-0">
-                        <i className={`feather ${data.icon} f-30 m-r-5`} /> $249.95
+                        <i className={`feather ${data.icon} f-30 m-r-5`} />{data.amount}
                       </h3>
                     </div>
-                    <div className="col-3 text-end">
-                      <p className="m-b-0">{data.value}%</p>
-                    </div>
-                  </div>
-                  <div className="progress m-t-30" style={{ height: '7px' }}>
-                    <div
-                      className={`progress-bar ${data.class}`}
-                      role="progressbar"
-                      style={{ width: `${data.value}%` }}
-                      aria-valuenow={data.value}
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    />
                   </div>
                 </Card.Body>
               </Card>

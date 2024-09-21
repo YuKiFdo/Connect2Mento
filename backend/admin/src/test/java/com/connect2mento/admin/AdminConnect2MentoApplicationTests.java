@@ -1,10 +1,10 @@
-package com.connect2mento.development;
+package com.connect2mento.admin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Connect2MentoApplicationTests {
+class AdminConnect2MentoApplicationTests {
 
 	@Test
 	void contextLoads() {
