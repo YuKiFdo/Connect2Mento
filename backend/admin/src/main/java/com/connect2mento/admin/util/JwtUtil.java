@@ -38,10 +38,12 @@ public class JwtUtil {
     }
 
     public String extractUsername(String token) {
+
         return extractAllClaims(token).getSubject();
     }
 
     private Boolean isTokenExpired(String token) {
+
         return extractAllClaims(token).getExpiration().before(new Date());
     }
     

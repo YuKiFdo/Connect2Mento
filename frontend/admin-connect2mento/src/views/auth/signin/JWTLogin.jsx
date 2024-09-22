@@ -13,7 +13,7 @@ const JWTLogin = () => {
 
   const handleLogin = async (values, { setSubmitting }) => {
     try {
-      const response = await axios.post('http://localhost:8080/auth/login', {
+      const response = await axios.post('http://localhost:8080/login', {
         username: values.email,
         password: values.password,
       });
