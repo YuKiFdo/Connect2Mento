@@ -5,6 +5,7 @@ import './index.css'
 import LoginConnection from './Connection/LoginConnection.jsx'
 import SignupContent from './Connection/SignupContent.jsx'
 import BrowseAll from './Connection/BrowseAll.jsx'
+import ViewMentorprofile from './Connection/ViewMentorprofile.jsx'
 
 
 import{
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path:"/browse",
     element: <BrowseAll />
+  },
+  {
+    path:"/view",
+    element: <ViewMentorprofile />
   },
   
 ]);

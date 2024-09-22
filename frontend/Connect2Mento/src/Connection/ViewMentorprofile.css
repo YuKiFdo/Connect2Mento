@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.Profile-back{
+
+  width:auto;
+  height: 235px;
+  background-color: #158D7F;
+  margin-top: 20px;
+  border-radius: 10px;
+  
+
+}
+
+.profile{
+
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+
+.profile-det{
+
+  width: 60%;
+  height: auto;
+}
+
+#profileimage1{
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding-top: 25px;
+  padding-left: 35px;
+  margin-right: 1500px;
+
+  
+}
+
+
+
+.profile-top {
+  font-size: 21px;
+  font-family: sans-serif;
+  color: #023650;
+  height: 250px;
+  margin-right: 550px;
+}
+
+.para{
+  margin-right: 150px;
+}
+
+.p{
+  margin-left: 17px;
+}
+
+.para2{
+  margin-right: 390px;
+}
+
+
+.para3{
+  margin-right: 335px;
+}
+
+
+.para4{
+  margin-right: 200px;
+}
+
+
+.other-det p{
+
+  font-size: 17px;
+}
+
+.abouttitle{
+  text-align: left;
+  margin-left: 20px;
+}
+.other-det{
+
+  font-size: 16px;
+  color: #777777;
+}
+
+.about-para{
+  padding-top: 15px;
+  margin-right: 28px;
+}
+
+.aboutpa{
+  text-align: left;
+  margin-left: 20px;
+}
+
+.profile-bottom {
+
+  font-size: 16px;
+
+}
+
+.profile-bottom  p{
+  font-size: 18px;
+}
+
+.profile-det{
+
+  height: 150px;
+}
+
+.top-part{
+
+  display: flex;
+}
+
+.peyment-det{
+  width: 700px;
+}
+.mentor-pricing{
+
+  display: flex;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  
+  
+}
+.box-type{
+
+  padding: 20px 20px 30px 20px;
+  border: 1px solid #b4b4b4;
+  margin: 10px 20px 0px 20px ;
+  border-radius: 8px;
+  width: 450px;
+}
+
+.features-mentor{
+
+  font-size: 17px;
+  padding-top: 27px;
+  color: #777777;
+  margin-right: 100px;
+}
+
+.vedio{
+  margin-right: 225px;
+}
+
+.code{
+  margin-right: 354px;
+}
+
+.inter{
+  margin-right: 320px;
+}
+
+.unlimit{
+  margin-right: 280px;
+}
+
+
+.name{
+
+  font-size: 26px;
+  color: #023650;
+}
+.skill{
+
+  color: #158D7F;
+}
+.position, .skill{
+  font-size: 18px;
+}
+
+
+
+
+.bottom-part{    
+  padding: 20px 20px 0px 0px;
+}
+
+.bottom-top{
+  font-size: 20px;
+  margin-left: 24px;
+
+}
+
+.bottom-middle, .bottom-last{
+
+  display: flex;
+}
+.bottom-middle{
+  color: rgb(88, 88, 88);
+  font-size: 18px;
+}
+
+
+.bottom-last-left{
+
+  font-size: 40px;
+
+}
+
+.bottom-last{
+  margin-right: 45px;
+}
+.findbtn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 250px;
+  height: 41px;
+  color: rgba(255,255,255,1);
+  background-color: #023650;
+  top: 668px;
+  left: 900px;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+  border-radius: 6px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+.findbtn:hover{
+  background-color: #02516a;
+  }
+
+
+

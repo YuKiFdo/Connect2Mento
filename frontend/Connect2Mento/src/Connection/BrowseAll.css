@@ -93,6 +93,7 @@
 .bottom-last-right{
 
     width: 50%;
+    margin-top: 30px;
 }
 
 .bottom-last-left{
@@ -100,15 +101,9 @@
     font-size: 30px;
 }
 
-.bottom-last-right{
-
-    
-}
 .findbtn {
     margin-top: 20px;
-    padding: 10px;
-    width: 250px;
-    height: 41px;
+    padding: 10px 80px;
     color: rgba(255,255,255,1);
     background-color: rgba(21,141,127,1);
     top: 668px;
@@ -123,4 +118,9 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .findbtn:hover{
+    background-color: #025a53;
   }

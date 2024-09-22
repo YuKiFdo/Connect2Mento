@@ -5,9 +5,8 @@ import Menulink from '../MenuLink/MenuLink'
 function HeaderContent() {
   return (
     <div id="navcontent">
-      {/* <div className="logo"> */}
         <img  className='logo' src='./images/c2m.png' alt="Connect2Mento" />
-      {/* </div> */}
+
 
       <div className='link'>
         <Menulink linkname="Engineering Mentors" url="/engineering"/>

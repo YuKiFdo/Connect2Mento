@@ -39,7 +39,7 @@ function BrowseAll() {
 
                 <div class="bottom-last">
                     <div class="bottom-last-left"><p><b>$200</b> / month</p></div>
-                   <div class="bottom-last-right"><button class="findbtn">View Profile</button></div> </div>
+                    <div class="bottom-last-right"><a href="/view" class="findbtn">View Profile</a></div> </div>
             </div>
         </div>
         <div class="right-mentor">
@@ -60,7 +60,7 @@ function BrowseAll() {
 
                 <div class="bottom-last">
                     <div class="bottom-last-left"><p><b>$200</b> / month</p></div>
-                   <div class="bottom-last-right"><button class="findbtn">View Profile</button></div> </div>
+                    <div class="bottom-last-right"><a href="/view" class="findbtn">View Profile</a></div></div>
             </div>  
         </div>
     </div>
@@ -85,7 +85,7 @@ function BrowseAll() {
 
                 <div class="bottom-last">
                     <div class="bottom-last-left"><p><b>$200</b> / month</p></div>
-                   <div class="bottom-last-right"><button class="findbtn">View Profile</button></div> </div>
+                    <div class="bottom-last-right"><a href="/view" class="findbtn">View Profile</a></div> </div>
             </div>
         </div>
         <div class="right-mentor">
@@ -106,7 +106,7 @@ function BrowseAll() {
 
                 <div class="bottom-last">
                     <div class="bottom-last-left"><p><b>$200</b> / month</p></div>
-                   <div class="bottom-last-right"><button class="findbtn">View Profile</button></div> </div>
+                    <div class="bottom-last-right"><a href="/view" class="findbtn">View Profile</a></div> </div>
             </div>  
         </div>
     </div>
@@ -131,7 +131,7 @@ function BrowseAll() {
 
                 <div class="bottom-last">
                     <div class="bottom-last-left"><p><b>$200</b> / month</p></div>
-                   <div class="bottom-last-right"><button class="findbtn">View Profile</button></div> </div>
+                    <div class="bottom-last-right"><a href="/view" class="findbtn">View Profile</a></div> </div>
             </div>
         </div>
         <div class="right-mentor">
@@ -152,7 +152,8 @@ function BrowseAll() {
 
                 <div class="bottom-last">
                     <div class="bottom-last-left"><p><b>$200</b> / month</p></div>
-                   <div class="bottom-last-right"><button class="findbtn">View Profile</button></div> </div>
+                   <div class="bottom-last-right"><a href="/view" class="findbtn">View Profile</a></div>
+                </div>
             </div>  
         </div>
     </div>
@@ -177,7 +178,7 @@ function BrowseAll() {
 
                 <div class="bottom-last">
                     <div class="bottom-last-left"><p><b>$200</b> / month</p></div>
-                   <div class="bottom-last-right"><button class="findbtn">View Profile</button></div> </div>
+                    <div class="bottom-last-right"><a href="/view" class="findbtn">View Profile</a></div>  </div>
             </div>
         </div>
         <div class="right-mentor">
@@ -198,7 +199,7 @@ function BrowseAll() {
         
                 <div class="bottom-last">
                     <div class="bottom-last-left"><p><b>$200</b> / month</p></div>
-                   <div class="bottom-last-right"><button class="findbtn">View Profile</button></div> </div>
+                    <div class="bottom-last-right"><a href="/view" class="findbtn">View Profile</a></div> </div>
             </div>  
         </div>
 
