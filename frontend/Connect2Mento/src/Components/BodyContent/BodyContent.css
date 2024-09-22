@@ -25,7 +25,6 @@
   #heading {
     font-size: 80px;
     line-height: 1.2;
-    font-family: 'Georgia', serif;
     color: #073642; 
     margin: 20px 0;
     text-align: left;
@@ -33,50 +32,16 @@
     left: 50px;
   }
 
-  .word {
-    opacity: 0;
+  .word{
     font-family: 'Georgia', serif;
-    transition: opacity 0.5s ease;
   }
 
-  @keyframes wordAnimation {
-    0% { opacity: 1; }
-    10% { opacity: 1; } 
-    30% { opacity: 1; } 
-    40% { opacity: 1; } 
-    100% { opacity: 0; }
-  }
-  
-  .word:nth-child(1) {
-    animation: wordAnimation 6s linear infinite;
-    animation-delay: 0s;
-  }
-  
-  .word:nth-child(2) {
-    animation: wordAnimation 6s linear infinite;
-    animation-delay: 1s;
-  }
-  
-  .word:nth-child(3) {
-    animation: wordAnimation 6s linear infinite;
-    animation-delay: 2s;
-  }
-  
-  .word:nth-child(4) {
-    animation: wordAnimation 6s linear infinite;
-    animation-delay: 3s;
-  }
-  
-  .word:nth-child(5) {
-    animation: wordAnimation 6s linear infinite;
-    animation-delay: 4s;
-  }
-  
-  .word:nth-child(6) {
-    animation: wordAnimation 6s linear infinite;
-    animation-delay: 5s;
-  }
-  
+.typing-text{
+  color: #158D7F; 
+  font-family: 'Georgia', serif; 
+  font-weight: bold;
+}
+ 
   .searchbar {
     margin: 20px 0;
     display: flex;
