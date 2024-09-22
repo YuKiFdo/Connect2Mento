@@ -101,7 +101,7 @@
     font-size: 30px;
 }
 
-.findbtn {
+.viewprofile-btn {
     margin-top: 20px;
     padding: 10px 80px;
     color: rgba(255,255,255,1);
@@ -121,6 +121,6 @@
     text-decoration: none;
   }
 
-  .findbtn:hover{
+  .viewprofile-btn:hover{
     background-color: #025a53;
   }

@@ -209,7 +209,7 @@
 .bottom-last{
   margin-right: 45px;
 }
-.findbtn {
+.book-btn {
   margin-top: 20px;
   padding: 10px;
   width: 250px;
@@ -230,7 +230,7 @@
   margin-left: 5px;
 }
 
-.findbtn:hover{
+.book-btn:hover{
   background-color: #02516a;
   }
 

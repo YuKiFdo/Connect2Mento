@@ -53,7 +53,7 @@ function ViewMentorprofile() {
         
                         <div class="bottom-last">
                             
-                           <div class="bottom-last-right"><button class="findbtn">Book </button></div> </div>
+                           <div class="bottom-last-right"><button class="book-btn">Book </button></div> </div>
                     </div>
                 </div>
                 
