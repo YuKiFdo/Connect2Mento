@@ -1,23 +1,35 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Row, Col, Card, Table, Tabs, Tab } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import GroupedColumnChart from 'views/charts/nvd3-chart/chart/GroupedChart';
+import axios from 'axios';
 
-import avatar1 from '../../assets/images/user/avatar-1.jpg';
-import avatar2 from '../../assets/images/user/avatar-2.jpg';
-import avatar3 from '../../assets/images/user/avatar-3.jpg';
 
-const dashSalesData = [
-  { title: 'Total Mentor Count', amount: '15', icon: 'icon-arrow-up text-c-green' },
-  { title: 'Total Members Count', amount: '124', icon: 'icon-arrow-down text-c-red'},
-  { title: 'Monthly Revenue', amount: 'LKR. 24,000.00', icon: 'icon-arrow-up text-c-green' }
-];
 
 const DashDefault = () => {
-  const tabContent = (
-    <React.Fragment>
-    </React.Fragment>
-  );
+  const [membersCount, setmembersCount] = useState(0);
+  const [mentorsCount, setmentorsCount] = useState(0);
+
+  useEffect(() => {
+    const fetchMenteeCount = async () => {
+      try {
+        const response = await axios.get('http://localhost:8080/mentees/count');
+        const response2 = await axios.get('http://localhost:8080/mentors/count');
+        setmembersCount(response.data + response2.data);
+        setmentorsCount(response2.data);
+      } catch (error) {
+        console.error('Error fetching mentee count:', error);
+      }
+    };
+    fetchMenteeCount();
+  }, []);
+
+  const dashSalesData = [
+    { title: 'Total Mentor Count', amount: mentorsCount, icon: 'icon-arrow-up text-c-green' },
+    { title: 'Total Members Count', amount: membersCount, icon: 'icon-arrow-down text-c-red'},
+    { title: 'Monthly Revenue', amount: 'LKR. 24,000.00', icon: 'icon-arrow-up text-c-green' }
+  ];
+
   return (
     <React.Fragment>
       <Row>

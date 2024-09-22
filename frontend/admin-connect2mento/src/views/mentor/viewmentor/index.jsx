@@ -1,93 +1,71 @@
-import React from 'react';
-import { Row, Col, Card, Table, Tabs, Tab } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Row, Col, Card, Table } from 'react-bootstrap';
+import axios from 'axios';
 
 const SamplePage = () => {
-    return (
-      <React.Fragment>
-        <Row>
+  const [mentors, setMentors] = useState([]);
+
+  useEffect(() => {
+    const fetchMentors = async () => {
+      try {
+        const response = await axios.get('http://localhost:8080/mentors');
+        setMentors(response.data);
+      } catch (error) {
+        console.error('Error fetching mentors:', error);
+      }
+    };
+
+    fetchMentors();
+  }, []);
+
+  return (
+    <React.Fragment>
+      <Row>
         <Col>
           <Card>
-              <Card.Header>
-                <Card.Title as="h5">Mentees</Card.Title>
-                <span className="d-block m-t-5">
-                  All Mentees
-                </span>
-              </Card.Header>
-              <Card.Body>
-                <Table responsive hover>
+            <Card.Header>
+              <Card.Title as="h5">Mentors</Card.Title>
+              <span className="d-block m-t-5">All Mentors</span>
+            </Card.Header>
+            <Card.Body>
+              <Table responsive hover>
                 <thead>
-                    <tr>
-                      <th></th>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Email</th>
-                    </tr>
-                  </thead>
+                  <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Job Title</th> 
+                    <th>Expertise Area</th>
+                    <th>Rate per Hour <br></br>LKR</th>
+                    <th>Date Joined</th>
+                    <th>Rating</th>
+                    <th>Description</th>
+                    <th>Profile Picture</th>
+                  </tr>
+                </thead>
                 <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mr.Saman Kumara</td>
-                      <td>Undergtaduate</td>
-                      <td>ShehalHerath@gmail.com</td>
+                  {mentors.map((mentor, index) => (
+                    <tr key={mentor.id}>
+                      <th scope="row">{index + 1}</th>
+                      <td>{mentor.name}</td>
+                      <td>{mentor.jobTitle}</td>
+                      <td>{mentor.expertiseArea}</td>
+                      <td>{mentor.rate}</td>
+                      <td>{new Date(mentor.dateJoined).toLocaleDateString()}</td>
+                      <td>{'⭐'.repeat(Math.round(mentor.rating))}</td>
+                      <td>{mentor.description}</td> 
+                      <td>
+                        <img src={mentor.profilePicture} alt={`${mentor.name}'s profile`} style={{ width: '50px', borderRadius: '50%' }} /> {/* Display profile picture */}
+                      </td>
                     </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Mrs.Shashini Nisansala</td>
-                      <td>A/L Student</td>
-                      <td>NimeshShaminda@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Liyathambara Gagamini</td>
-                      <td>Undergraduate</td>
-                      <td>LiyathambaraGagamini@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Lishani Chamathka</td>
-                      <td>A/L Student</td>
-                      <td>LishaniChamathka@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Lishani Chamathka</td>
-                      <td>A/L Student</td>
-                      <td>LishaniChamathka@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Lishani Chamathka</td>
-                      <td>A/L Student</td>
-                      <td>LishaniChamathka@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Lishani Chamathka</td>
-                      <td>A/L Student</td>
-                      <td>LishaniChamathka@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Lishani Chamathka</td>
-                      <td>A/L Student</td>
-                      <td>LishaniChamathka@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Lishani Chamathka</td>
-                      <td>A/L Student</td>
-                      <td>LishaniChamathka@gmail.com</td>
-                    </tr>
-                  </tbody>
-                </Table>
-              </Card.Body>
-            </Card>
-          </Col> 
-    
-        </Row>
-      </React.Fragment>
-    );
-  };
-  
-  export default SamplePage;
-  
+                  ))}
+                </tbody>
+              </Table>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </React.Fragment>
+  );
+};
+
+export default SamplePage;

@@ -1,94 +1,89 @@
-import React from 'react';
-import { Row, Col, Card, Table, Tabs, Tab } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Row, Col, Card, Table, Button } from 'react-bootstrap';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
+const MenteePage = () => {
+  const [mentees, setMentees] = useState([]);
 
+  useEffect(() => {
+    fetchMentees();
+  }, []);
 
-const SamplePage = () => {
+  const fetchMentees = async () => {
+    try {
+      const response = await axios.get('http://localhost:8080/mentees');
+      setMentees(response.data);
+    } catch (error) {
+      console.error('Error fetching mentees:', error);
+    }
+  };
+
+  const handleRemove = async (id) => {
+    try {
+      console.log(`Removing mentee with id ${id}`);
+      await axios.delete(`http://localhost:8080/mentees/${id}`);
+      fetchMentees();
+    } catch (error) {
+      console.error('Failed to remove mentee', error);
+    }
+  };
+
   return (
     <React.Fragment>
       <Row>
-      <Col>
-        <Card>
+        <Col>
+          <Card>
             <Card.Header>
               <Card.Title as="h5">Mentees</Card.Title>
-              <span className="d-block m-t-5">
-                All Mentees
-              </span>
+              <span className="d-block m-t-5">All Mentees</span>
             </Card.Header>
             <Card.Body>
               <Table responsive hover>
-              <thead>
+                <thead>
                   <tr>
-                    <th></th>
+                    <th>#</th>
                     <th>Name</th>
                     <th>Position</th>
                     <th>Email</th>
+                    <th>Date Joined</th>
+                    <th>Action</th> 
                   </tr>
                 </thead>
-              <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mr.Saman Kumara</td>
-                    <td>Undergtaduate</td>
-                    <td>ShehalHerath@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Mrs.Shashini Nisansala</td>
-                    <td>A/L Student</td>
-                    <td>NimeshShaminda@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Liyathambara Gagamini</td>
-                    <td>Undergraduate</td>
-                    <td>LiyathambaraGagamini@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Lishani Chamathka</td>
-                    <td>A/L Student</td>
-                    <td>LishaniChamathka@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Lishani Chamathka</td>
-                    <td>A/L Student</td>
-                    <td>LishaniChamathka@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Lishani Chamathka</td>
-                    <td>A/L Student</td>
-                    <td>LishaniChamathka@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Lishani Chamathka</td>
-                    <td>A/L Student</td>
-                    <td>LishaniChamathka@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Lishani Chamathka</td>
-                    <td>A/L Student</td>
-                    <td>LishaniChamathka@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Lishani Chamathka</td>
-                    <td>A/L Student</td>
-                    <td>LishaniChamathka@gmail.com</td>
-                  </tr>
+                <tbody>
+                  {mentees.map((mentee, index) => (
+                    <tr key={mentee.id}>
+                      <th scope="row">{index + 1}</th>
+                      <td>{mentee.name}</td>
+                      <td>{mentee.position}</td>
+                      <td>{mentee.email}</td>
+                      <td>{new Date(mentee.dateJoined).toLocaleDateString()}</td>
+                      <td>
+                        <Link
+                          className="label text-white f-12"
+                          onClick={() => handleRemove(mentee.id)}
+                          style={{
+                            height: '25px',
+                            borderRadius: '20px',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            padding: '0 10px',
+                            background: 'linear-gradient(to right, red, orange)'
+                          }}
+                        >
+                          Remove
+                        </Link>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </Card.Body>
           </Card>
-        </Col> 
-  
+        </Col>
       </Row>
     </React.Fragment>
   );
 };
 
-export default SamplePage;
+export default MenteePage;

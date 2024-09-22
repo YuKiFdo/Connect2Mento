@@ -36,6 +36,16 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
                 .requestMatchers(HttpMethod.POST, "/register").permitAll()
                 .requestMatchers(HttpMethod.GET, "/user").permitAll()
+                .requestMatchers(HttpMethod.GET, "/mentees").permitAll()
+                .requestMatchers(HttpMethod.DELETE, "/mentees/*").permitAll()
+                .requestMatchers(HttpMethod.GET, "/mentees/*").permitAll()
+                .requestMatchers(HttpMethod.GET, "/applications").permitAll()
+                .requestMatchers(HttpMethod.POST, "/applications/add").permitAll()
+                .requestMatchers(HttpMethod.POST, "/applications/*").permitAll()
+
+                .requestMatchers(HttpMethod.GET, "/mentors").permitAll()
+                .requestMatchers(HttpMethod.POST, "/mentors/add").permitAll()
+                .requestMatchers(HttpMethod.GET, "/mentors/count").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
