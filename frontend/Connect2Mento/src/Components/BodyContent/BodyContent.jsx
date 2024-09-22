@@ -9,8 +9,14 @@ function BodyContent() {
 
     <div className="left-section">
 
-      <h1 className="heading">
-        Find the <br /> Best <br /> Mentor with <br /> Us
+      <h1 id="heading">
+        
+      <span class="word">Find </span> 
+      <span class="word">the <br/></span> 
+      <span class="word">Best <br/></span>
+      <span class="word">Mentor </span> 
+      <span class="word">With <br/></span> 
+      <span class="word">Us</span>
       </h1>
 
       <div className='imgContainer'>

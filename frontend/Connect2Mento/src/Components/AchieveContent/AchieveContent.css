@@ -72,7 +72,14 @@ body {
   opacity: 1;
   text-align: left;
 }
-.maintitle {
+
+.word1 {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#maintitle {
   width: 351px;
   color: rgba(2,48,71,1);
   position: absolute;
@@ -83,7 +90,43 @@ body {
   font-size: 29px;
   opacity: 1;
   text-align: left;
+  display: inline;
 }
+
+.word1 {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes wordAnimation {
+  0% { opacity: 0; }
+  10% { opacity: 1; } /* Word becomes visible */
+  30% { opacity: 1; } /* Keep word visible for a short duration */
+  40% { opacity: 0; } /* Word fades out */
+  100% { opacity: 1; } /* Ensure all words are fully visible at the end */
+}
+
+/* Animate the words one by one */
+.word1:nth-child(1) {
+  animation: wordAnimation 4s linear forwards;
+}
+
+.word1:nth-child(2) {
+  animation: wordAnimation 4s linear forwards;
+  animation-delay: 1s;
+}
+
+.word1:nth-child(3) {
+  animation: wordAnimation 4s linear forwards;
+  animation-delay: 2s;
+}
+
+.word1:nth-child(4) {
+  animation: wordAnimation 4s linear forwards;
+  animation-delay: 3s;
+}
+
 .p1 {
   width: 270px;
   color: rgba(0,0,0,1);

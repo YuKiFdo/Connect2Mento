@@ -16,7 +16,13 @@ function AchieveContent() {
         
           <p class="inttitle">Customised interview</p>
         
-          <span class="maintitle">Achieve More with Us </span>
+          <span id="maintitle">
+          <span class="word1">Achieve </span> 
+          <span class="word1">More </span> 
+          <span class="word1">With </span> 
+          <span class="word1">Us </span>
+
+          </span>
         
           <p class="p1">You can select your meeting as group or individual time according to your situation</p>
 

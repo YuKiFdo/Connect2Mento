@@ -146,16 +146,67 @@
     opacity: 1;
     text-align: left;
   }
-  .maintit {
+  #maintit {
     width: 471px;
     color: rgba(2,48,71,1);
-    position: absolute;
+    position: relative;
     top: 50px;
-    left: 650px;
+    left: 50px;
     font-weight: Bold;
     font-size: 30px;
     opacity: 1;
     text-align: center;
+  }
+
+  .word2 {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    display: inline;
+  }
+  
+  @keyframes wordAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; } /* Word becomes visible */
+    30% { opacity: 1; } /* Keep word visible for a short duration */
+    40% { opacity: 0; } /* Word fades out */
+    100% { opacity: 1; } /* Ensure all words are fully visible at the end */
+  }
+  
+  /* Animate the words one by one */
+  .word2:nth-child(1) {
+    animation: wordAnimation 10s linear forwards;
+  }
+  
+  .word2:nth-child(2) {
+    animation: wordAnimation 10s linear forwards;
+    animation-delay: 1s;
+  }
+  
+  .word2:nth-child(3) {
+    animation: wordAnimation 10s linear forwards;
+    animation-delay: 2s;
+  }
+  
+  .word2:nth-child(4) {
+    animation: wordAnimation 10s linear forwards;
+    animation-delay: 3s;
+  }
+
+  .word2:nth-child(5) {
+    animation: wordAnimation 10s linear forwards;
+    animation-delay: 4s;
+  }
+
+  .word2:nth-child(6) {
+    animation: wordAnimation 10s linear forwards;
+    animation-delay: 5s;
+  }
+
+  .word2:nth-child(7) {
+    animation: wordAnimation 10s linear forwards;
+    animation-delay: 6s;
   }
   .mainp {
     width: 852px;

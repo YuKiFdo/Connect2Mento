@@ -29,7 +29,15 @@ function WhyusContent() {
         
         <span class="thirdhboxtitle">The Meeting can<br/> be held at <br/>a convenient time for you</span>
         
-        <span class="maintit">Unlock Your Potential with Personalized Mentoring Solutions!</span>
+        <span id="maintit">
+          <span class="word2">Unlock </span> 
+          <span class="word2">Your </span> 
+          <span class="word2">Potential </span> 
+          <span class="word2">with </span> 
+          <span class="word2">Personalized <br/></span> 
+          <span class="word2">Mentoring </span> 
+          <span class="word2">Solutions!</span>
+        </span>
         
         <span class="mainp">"Empowering learners with expert guidance anytime, anywhere. Connect, learn, and grow with personalized online mentoring sessions."</span>
     
