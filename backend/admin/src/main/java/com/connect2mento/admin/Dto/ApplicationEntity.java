@@ -15,7 +15,7 @@ import jakarta.persistence.Id;
 public class ApplicationEntity {
 
 
-        @Id
+    @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
 
@@ -27,6 +27,14 @@ public class ApplicationEntity {
         private String status; // PENDING, APPROVED, REJECTED
         private String linkedinUrl;
         private String gender;
+        private String company;
+        private String location;
+        private String Bio;
+        private String whyMentor;
+        private String introvideo;
+
+
+
 
     public Long getId() {
         return id;
@@ -98,6 +106,47 @@ public class ApplicationEntity {
 
     public void setGender(String gender) { // Add setter for gender
         this.gender = gender;
+    }
+
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getBio() {
+        return Bio;
+    }
+
+    public void setBio(String bio) {
+        Bio = bio;
+    }
+
+    public String getWhyMentor() {
+        return whyMentor;
+    }
+
+    public void setWhyMentor(String whyMentor) {
+        this.whyMentor = whyMentor;
+    }
+
+    public String getIntrovideo() {
+        return introvideo;
+    }
+
+    public void setIntrovideo(String introvideo) {
+        this.introvideo = introvideo;
     }
 
 }

@@ -7,7 +7,8 @@ import SignupContent from './Connection/SignupContent.jsx'
 import BrowseAll from './Connection/BrowseAll.jsx'
 import ViewMentorprofile from './Connection/ViewMentorprofile.jsx'
 import MentorForm from './Connection/MentorForm.jsx'
-import Stilldeveloping from './Connection/Stilldeveloping.jsx'
+import ComingSoon from './Connection/ComingSoon.jsx'
+import SuccessPage from './Connection/Mentorapplication-success.jsx'
 
 
 import{
@@ -39,6 +40,26 @@ const router = createBrowserRouter([
   {
     path:"/signup-mentor",
     element: <MentorForm />
+  },
+  {
+    path:"/Mentorapplication-success",
+    element: <SuccessPage />
+  },
+  {
+    path:"/design",
+    element: <ComingSoon />
+  },
+  {
+    path: "/engineering",
+    element: <ComingSoon />
+  },
+  {
+    path: "/low",
+    element: <ComingSoon />
+  },
+  {
+    path: "/top",
+    element: <ComingSoon />
   },
   {
     path:"/",
