@@ -15,7 +15,7 @@ import com.connect2mento.admin.Dto.userEntity;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin(origins = "http://localhost:3001")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
 
     @Autowired
