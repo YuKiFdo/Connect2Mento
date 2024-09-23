@@ -1,0 +1,54 @@
+.background{
+    width:auto;
+    height: 783px;
+    background-color: #CEE7F3;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#titledev{
+    font-size: 50px;
+    font-weight: bold;
+    color: darkslategrey;
+    width: 351px;
+    position: relative;
+    top: 350px;
+    left: 0px;
+    opacity: 1;
+    text-align: left;
+    display: inline;
+    
+    
+}
+
+.word5 {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  @keyframes wordCycle {
+    0%, 16.66% { opacity: 1; } /* Show the word */
+    33.33%, 100% { opacity: 0; } /* Hide the word */
+  }
+  
+  /* Animate the words one by one */
+  #titledev .word5:nth-child(1) {
+    animation: wordCycle 4s linear infinite;
+    animation-delay: 0s;
+  }
+  
+  #titledev .word5:nth-child(2) {
+    animation: wordCycle 4s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  #titledev .word5:nth-child(3) {
+    animation: wordCycle 4s linear infinite;
+    animation-delay:2s;
+  }
+  
+  #titledev .word5:nth-child(4) {
+    animation: wordCycle 4s linear infinite;
+    animation-delay: 3s;
+  }
