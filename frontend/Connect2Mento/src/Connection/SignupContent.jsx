@@ -2,13 +2,19 @@ import React from 'react'
 import HeaderContent from '../Components/HeaderContent/HeaderContent'
 import './SignupContent.css'
 
-function SignupContent() {
+
+const SignupContent = () => {
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const togglePasswordVisibility = () => {
+      setPasswordVisible(!passwordVisible);
+  };
+  
   return (
 
     <div id="wrapper">
         <HeaderContent/> 
 
-    <div class="back">
+    {/* <div class="back">
             <div class="blok">
               <span class="signtitle">SignUp</span>
             </div>
@@ -76,7 +82,62 @@ function SignupContent() {
             
             <div class="microsofticon"></div>
         
+        </div> */}
+
+
+
+
+
+            <div className="signup-container">
+            <div className="signup-left">
+                <div className="logo">
+                    <img src="/logo.png" alt="Logo" />
+                </div>
+            </div>
+            <div className="signup-right">
+                <h2>Sign up as a mentee</h2>
+                <form className="signup-form">
+                    <label>First name</label>
+                    <input type="text" placeholder="First name" />
+
+                    <label>Last name</label>
+                    <input type="text" placeholder="Last name" />
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" />
+
+                    <label>Password</label>
+                    <div className="password-field">
+                        <input 
+                            type={passwordVisible ? "text" : "password"} 
+                            placeholder="Password" 
+                        />
+                        <span className="show-password" onClick={togglePasswordVisibility}>
+                            {passwordVisible ? 'Hide' : 'Show'}
+                        </span>
+                    </div>
+
+                    <ul className="password-rules">
+                        <li>Must be at least 8 characters</li>
+                        <li>Must include one lowercase character</li>
+                        <li>Must include one uppercase character</li>
+                        <li>Can't be too common</li>
+                    </ul>
+
+                    <div className="captcha">
+                        <div className="captcha-placeholder">
+                            {/* Replace this with actual reCAPTCHA integration */}
+                            <p>I'm not a robot</p>
+                        </div>
+                    </div>
+
+                    <button className="signup-button">Sign up</button>
+                </form>
+            </div>
         </div>
+
+
+
     
     
 

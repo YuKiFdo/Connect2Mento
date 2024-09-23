@@ -6,6 +6,7 @@ import LoginConnection from './Connection/LoginConnection.jsx'
 import SignupContent from './Connection/SignupContent.jsx'
 import BrowseAll from './Connection/BrowseAll.jsx'
 import ViewMentorprofile from './Connection/ViewMentorprofile.jsx'
+import MentorForm from './Connection/MentorForm.jsx'
 
 
 import{
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
     element: <LoginConnection />
   },
   {
-    path:"/signup",
+    path:"/signup-mentee",
     element: <SignupContent />
   },
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path:"/view",
     element: <ViewMentorprofile />
+  },
+  {
+    path:"/signup-mentor",
+    element: <MentorForm />
   },
   
 ]);

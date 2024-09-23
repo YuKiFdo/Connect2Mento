@@ -1,220 +1,142 @@
-* {
-    box-sizing: border-box;
-  }
-  body {
-    font-size: 14px;
-  }
-  .loginview{
-    width: 100%;
-    height: 835px;
-    background: rgba(2,54,80,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .log{
-    width: 100%;
-    height: 835px;
-    background: rgba(249,249,249,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 500px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-  }
-  .logtit{
-    width: 101px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 73px;
-    left: 650px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 32px;
-    opacity: 1;
-    text-align: left;
-  }
+
+.login-container {
+  display: flex;
+  height: 835px;
+}
+
+.login-left {
+  width: 40%;
+  background-color: #1f3558;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logtit{
+  width: 101px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 250px;
+  left: 820px;
+  font-weight: Bold;
+  font-size: 32px;
+  text-align: left;
+}
+
+.logo img {
+  height: 150px;
+  width: auto;
+}
+
+.login-right {
+  width: 60%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.tab-switch {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.tab-switch button {
+  width: 50%;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.tab-switch button.active {
+  border-bottom: 2px solid #20c997;
+  color: #000;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.label1 {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.0rem;
+  color: #333;
+  margin-right: 345px;
+}
+
+.label2 {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.0rem;
+  color: #333;
+  margin-right: 410px;
+}
+
+
+.login-form input {
+  width: 50%;
+  padding: 10px;
+  height: 50px;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1.0rem;
+}
+
+.login-button, .google-login {
+  width: 493px;
+  padding: 12px;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #20c997;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 50px;
+}
+
+.google-login {
+  background-color: #023650;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #7e7e7e;
+  font-size: 0.9rem;
+}
+
+.login-footer {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.0rem;
+}
+
+.donot{
+  margin-top: 1rem;
+  text-align: center;
+  margin-right: 150px;
+}
+.forgot{
+  margin-top: 1rem;
+  text-align: center;
+  margin-right: 350px;
+}
+
+.login-footer a {
+  color: #20c997;
+  text-decoration: none;
  
-  .usefield {
-    background: rgba(249,249,249,1);
-    opacity: 1;
-    position: absolute;
-    top: 164px;
-    left: 450px;
-    overflow: hidden;
-  }
-
-  .pasfield{
-    opacity: 1;
-    position: absolute;
-    top: 250px;
-    left: 450px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    overflow: hidden;
-  }
-
-  .username{
-    width: 500px;
-    height: 30px;
-    border-color: black;
-    border-radius: 10px;
-  }
-  
-.usernametitle{
-  font-size: 16px;
-  text-align: left;
-  
 }
 
-.passwordtitle{
-  font-size: 16px;
-  text-align: left;
+.login-footer a:hover {
+  text-decoration: underline;
 }
 
-.password{
-  width: 500px;
-  height: 30px;
-  border-color: black;
-  border-radius: 10px;
-  
-}
-  .forogot{
-    font-size: 16px;
-    text-align: left;
-    color: lightslategrey;
-    opacity: 1;
-    position: absolute;
-    top: 70px;
-    left: 0px;
-  }
-  
-  .loginwithtitle{
-    position: absolute;
-    top: 446px;
-    left: 450px;
-  }
-  .loginwith {
-    width: 120px;
-    color: gray;
-    position: absolute;
-    top: 5px;
-    left: 170px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 20px;
-    text-align: center;
-  }
-  .dontaccount {
-    color: rgba(75,75,75,1);
-    position: absolute;
-    top: 600px;
-    left: 450px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .signuplink {
-    width: 52px;
-    color: rgba(2,48,71,1);
-    position: absolute;
-    top: 603px;
-    left: 625px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 14px;
-    opacity: 1;
-    text-align: left;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .googicon {
-    width: 32px;
-    height: 32px;
-    background: url("../images/v291_20.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 496px;
-    left: 550px;
-    overflow: hidden;
-  }
-  .googword {
-    width: 69px;
-    color: rgba(75,75,75,1);
-    position: absolute;
-    top: 505px;
-    left: 590px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-  }
-  .microword {
-    width: 69px;
-    color: rgba(75,75,75,1);
-    position: absolute;
-    top: 505px;
-    left: 790px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-  }
-  .microsicon {
-    width: 32px;
-    height: 32px;
-    background: url("../images/v291_23.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 496px;
-    left: 750px;
-    overflow: hidden;
-  }
-
-  .loginbutton{
-    width: 45px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 398px;
-    left: 450px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-  }
-
-  .loginbtn{
-    height: 40px;
-    width: 500px;
-    background-color: rgba(21,141,127,1);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 17px;
-   
-  }
-
-  .loginbtn:hover{
- background-color: rgba(2,54,80,1);
-  }
-  
