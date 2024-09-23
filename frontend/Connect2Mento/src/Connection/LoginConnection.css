@@ -14,7 +14,7 @@
 
 .logtit{
   width: 101px;
-  color: rgba(0,0,0,1);
+  color: #333;
   position: absolute;
   top: 250px;
   left: 820px;
@@ -131,7 +131,7 @@
 }
 
 .login-footer a {
-  color: #20c997;
+  color: #158D7F;
   text-decoration: none;
  
 }

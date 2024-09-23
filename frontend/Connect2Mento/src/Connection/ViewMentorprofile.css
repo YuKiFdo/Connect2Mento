@@ -47,29 +47,29 @@
   font-family: sans-serif;
   color: #023650;
   height: 250px;
-  margin-right: 550px;
+  margin-right: 595px;
 }
 
 .para{
-  margin-right: 150px;
+  text-align: left;
 }
 
 .p{
-  margin-left: 17px;
+  text-align: left;
 }
 
 .para2{
-  margin-right: 390px;
+  text-align: left;
 }
 
 
 .para3{
-  margin-right: 335px;
+  text-align: left;
 }
 
 
 .para4{
-  margin-right: 200px;
+  text-align: left;
 }
 
 
@@ -80,7 +80,6 @@
 
 .abouttitle{
   text-align: left;
-  margin-left: 20px;
 }
 .other-det{
 
@@ -90,12 +89,11 @@
 
 .about-para{
   padding-top: 15px;
-  margin-right: 28px;
+  text-align: left;
 }
 
 .aboutpa{
   text-align: left;
-  margin-left: 20px;
 }
 
 .profile-bottom {

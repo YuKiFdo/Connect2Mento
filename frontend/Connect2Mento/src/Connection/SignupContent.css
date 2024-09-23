@@ -1,257 +1,8 @@
-/* * {
-    box-sizing: border-box;
-  }
-  body {
-    font-size: 14px;
-  }
-  .back{
-    width: 100%;
-    height: 835px;
-    background: rgba(2,54,80,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .blok{
-    width: 1405px;
-    height: 835px;
-    background: rgba(249,249,249,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 500px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-  }
-  .signtitle{
-    width: 101px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 73px;
-    left: 660px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 32px;
-    opacity: 1;
-    text-align: left;
-  }
-  .emailfield {
-    background: rgba(249,249,249,1);
-    opacity: 1;
-    position: absolute;
-    top: 295px;
-    left: 1000px;
-    overflow: hidden;
-  }
 
-  .paswordfield {
-    opacity: 1;
-    position: absolute;
-    top: 375px;
-    left: 1000px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    overflow: hidden;
-  }
-
-.lastnamefield{
-    opacity: 1;
-    position: absolute;
-    top: 215px;
-    left: 1000px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    overflow: hidden; 
+.signup-container {
+  display: flex;
+  height: 100vh;
 }
-
-.lastnametitle{
-    font-size: 16px;
-    text-align: left; 
-}
-
-.lastname{
-    width: 500px;
-    height: 30px;
-    border-color: black;
-    border-radius: 10px;
-}
-
-.emailtitle{
-    font-size: 16px;
-    text-align: left;   
-}
-
-.email{
-    width: 500px;
-    height: 30px;
-    border-color: black;
-    border-radius: 10px;
-}
-
-.firstnametitle{
-    font-size: 16px;
-    text-align: left;  
-}
-
-.firstname{
-  width: 500px;
-  height: 30px;
-  border-color: black;
-  border-radius: 10px;
-}
-
-.firstnamefield{
-    opacity: 1;
-    position: absolute;
-    top: 135px;
-    left: 850px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    overflow: hidden; 
-    left: 1000px;   
-}
-
-  .signupwithtitle{
-    position: absolute;
-    top: 510px;
-    left: 1050px;
-  }
-  .signupwith {
-    width: 120px;
-    color: gray;
-    position: absolute;
-    top: 5px;
-    left: 150px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 17px;
-    text-align: center;
-  }
-  .alreadyaccounnt {
-    width: 170px;
-    color: rgba(75,75,75,1);
-    position: absolute;
-    top: 650px;
-    left: 1000px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .loginlink {
-    width: 52px;
-    color: rgba(2,48,71,1);
-    position: absolute;
-    top: 652px;
-    left: 1190px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 14px;
-    opacity: 1;
-    text-align: left;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .googleicon {
-    width: 32px;
-    height: 32px;
-    background: url("../images/v291_20.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 575px;
-    left: 1100px;
-    overflow: hidden;
-  }
-  .googleword {
-    width: 69px;
-    color: rgba(75,75,75,1);
-    position: absolute;
-    top: 583px;
-    left: 1150px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-  }
-  .microsoftword {
-    width: 69px;
-    color: rgba(75,75,75,1);
-    position: absolute;
-    top: 583px;
-    left: 1380px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-  }
-  .microsofticon {
-    width: 32px;
-    height: 32px;
-    background: url("../images/v291_23.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 575px;
-    left: 1325px;
-    overflow: hidden;
-  }
-
-  .signupbutton{
-    width: 45px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 465px;
-    left: 1000px;
-    font-family: Inter;
-    font-weight: Medium;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-  }
-
-  .signupbtn{
-    height: 40px;
-    width: 500px;
-    background-color: rgba(21,141,127,1);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 17px;
-   
-  }
-  
-  .signupbtn:hover{
-    background-color: rgba(2,54,80,1);
-}
-
-     */
-
-
-
-     .signup-container {
-      display: flex;
-      height: 100vh;
-  }
   
   .signup-left {
       width: 40%;
@@ -259,6 +10,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+  }
+
+
+  .or-divider {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #7e7e7e;
+    font-size: 0.9rem;
+    margin-bottom: 0px;
   }
   
   .logo img {
@@ -277,78 +37,77 @@
   
   .signup-right h2 {
       margin-bottom: 1.5rem;
-      font-size: 1.5rem;
+      font-size: 32px;
       color: #333;
+      position: absolute;
+      top: 250px;
+      left: 1065px;
+      font-weight: Bold;
+      font-size: 32px;
+      text-align: left;
   }
   
   .signup-form {
       display: flex;
       flex-direction: column;
+      width: 100%;
+      align-items: center;
+  }
+
+  .logo img {
+    height: 150px;
+    width: auto;
   }
   
-  .signup-form label {
+  
+  .emailtitle{
       margin-top: 1rem;
-      font-size: 0.9rem;
+      font-size: 1.0rem;
       color: #333;
+      margin-right: 450px;
   }
+  .first{
+    margin-top: 1rem;
+    font-size: 1.0rem;
+    color: #333;
+    margin-right: 405px;
+}
+.last{
+  margin-top: 1rem;
+  font-size: 1.0rem;
+  color: #333;
+  margin-right: 405px;
+}
+.password{
+  margin-top: 1rem;
+  font-size: 1.0rem;
+  color: #333;
+  margin-right: 420px;
+}
   
   .signup-form input {
-      width: 100%;
-      padding: 10px;
-      margin-top: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+    width: 50%;
+    padding: 10px;
+    height: 50px;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 1.0rem;
   }
   
   .password-field {
       position: relative;
+      width: 100%;
   }
   
   .password-field input {
       padding-right: 50px;
   }
   
-  .show-password {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-      color: #20c997;
-      font-size: 0.9rem;
-  }
-  
-  .password-rules {
-      list-style: none;
-      padding: 0;
-      margin-top: 0.5rem;
-      color: #555;
-      font-size: 0.85rem;
-  }
-  
-  .password-rules li {
-      margin-bottom: 0.5rem;
-  }
-  
-  .captcha {
-      margin-top: 1.5rem;
-      text-align: center;
-  }
-  
-  .captcha-placeholder {
-      width: 100%;
-      height: 70px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #555;
-      background-color: #f8f8f8;
-  }
   
   .signup-button {
-      width: 100%;
+      width: 493px;
       padding: 12px;
       margin-top: 1.5rem;
       border: none;
@@ -358,4 +117,28 @@
       cursor: pointer;
       font-size: 1rem;
   }
+  .alreadyaccount{
+    margin-top: 0px;
+    text-align: center;
+    text-align: center;
+    font-size: 1.0rem;
+  }
+
+  .footerloginlink{
+    margin-top: 30px;
+    margin-right: 245px;
+  }
+
+  .loginmentee{
+    font-size: 16px;
+    text-decoration: none;
+    color: #158D7F; 
+    transition: color 0.3s ease;
+    margin-top: 0px;
+  }
+
+  .loginmentee:hover {
+    text-decoration: underline;
+  }
+  
   
