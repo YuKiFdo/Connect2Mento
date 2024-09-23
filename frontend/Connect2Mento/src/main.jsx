@@ -39,6 +39,10 @@ const router = createBrowserRouter([
     path:"/signup-mentor",
     element: <MentorForm />
   },
+  {
+    path:"/",
+    element: <App />
+  },
   
 ]);
 
