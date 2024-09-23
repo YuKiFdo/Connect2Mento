@@ -13,7 +13,7 @@ import FeaturesContent from './Components/FeaturesContent/FeaturesContent'
 
 function App() {
   return (
-    <div id ="wrapper">
+    <div id ="wrapper" className="container-fluid">
       <HeaderContent/>
       <BodyContent/>
       <AchieveContent/>
@@ -21,7 +21,6 @@ function App() {
       <MentorContent/>
       <WorkContent/>
       <FeaturesContent/>
-      
       <FooterContent/>
     </div>
   )

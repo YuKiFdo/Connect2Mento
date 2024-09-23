@@ -114,11 +114,10 @@
   }
   
   .secondboxtitle {
-    width: 156px;
     color: rgba(0,0,0,1);
     position: absolute;
     top: 620px;
-    left: 700px;
+    left: 690px;
     font-weight: Regular;
     font-size: 24px;
     opacity: 1;
