@@ -150,11 +150,9 @@ const MentorProfileHome = () => {
                       <li>Laptop</li>
                     </ul>                         
                   </div>
-        </div>
+              </div>
+          </div>
       </div>
-    </div>
-
-
   </div>
     
 

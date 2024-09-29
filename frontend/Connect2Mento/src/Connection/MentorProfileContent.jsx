@@ -1,19 +1,18 @@
 import React from 'react';
 import './MentorProfileContent.css';
-import { FaHome, FaUser, FaCalendarAlt, FaComments, FaChartBar, FaCog, FaSyncAlt } from 'react-icons/fa';
-import { FaBars } from 'react-icons/fa'
 import DashboardCard from '../Components/DashboardCard/DashboardCard';
 import StudentsPerformance from '../Components/StudentsPerformance/StudentsPerformance';
 import Calender from '../Components/Calender/Calender';
 import Notes from '../Components/Notes/Notes';
 import Meetings from '../Components/Meetings/Meetings';
+import { FaHome, FaUser, FaCalendarAlt, FaComments, FaChartBar, FaCog, FaSyncAlt } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa'
 
 
 
 const MentorProfileContent = ({ title, value }) => {
   return (
-  <div className='full-page'>
-
+  <div className='page'>
       <div id="nav-bar">
             <a href="/new">
             <img  className='logo' src='./images/iconc2m.png' alt="Connect2Mento" />

@@ -1,35 +1,23 @@
-.calendar {
-    background-color: #E5F1F2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  .calendar table {
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-  }
-  
-  .calendar th, .calendar td {
-    padding: 10px;
-    border: none;
-  }
-  
-  .calendar h3 {
-    margin-bottom: 10px;
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f9;
   }
 
-
-  .full-page{
+.full-page{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: flex-start; 
-    min-height: 100vh; 
-  }
-  
+    justify-content: space-between; 
+    min-height: 200px; 
+} 
      #nav-bar{
+      position: fixed;
       min-height: 10vh;
       background-color: white;
       color: Black;
@@ -92,7 +80,7 @@
   /* Sidebar.css */
   .sidebar {
     width: 200px;
-    height: 850px;
+    height: calc(100vh - 60px);
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -160,4 +148,5 @@
   .menu-text {
     color: #004466;
   }
-  
+
+ 
