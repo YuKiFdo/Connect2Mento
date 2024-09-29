@@ -26,7 +26,6 @@ public class MenteeController {
         return menteeService.addMentee(mentee);
     }
 
-    //add list of mentees
     @PostMapping("/addList")
     public List<menteeEntity> addMenteeList(@RequestBody List<menteeEntity> menteeList) {
         return menteeService.addMenteeList(menteeList);

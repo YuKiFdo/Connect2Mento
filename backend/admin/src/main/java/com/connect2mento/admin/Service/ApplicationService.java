@@ -4,7 +4,10 @@ import com.connect2mento.admin.Dto.ApplicationEntity;
 import com.connect2mento.admin.Dto.MentorEntitiy;
 import com.connect2mento.admin.Repo.ApplicationRepo;
 import com.connect2mento.admin.Repo.MentorRepo;
+import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +27,9 @@ public class ApplicationService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Autowired
+    private JavaMailSender emailSender;
+
     public List<ApplicationEntity> getAllApplications() {
         return repository.findAll();
     }
@@ -36,7 +42,6 @@ public class ApplicationService {
 
             String username = applicationEntity.getName().toLowerCase().replaceAll(" ","_");
             String tempPass = generateTempPassword();
-
             String hashedPassword = passwordEncoder.encode(tempPass);
 
             MentorEntitiy mentor = new MentorEntitiy();
@@ -52,6 +57,31 @@ public class ApplicationService {
 
             applicationEntity.setStatus("APPROVED");
             repository.save(applicationEntity);
+
+
+            try {
+                MimeMessage message = emailSender.createMimeMessage();
+                MimeMessageHelper helper = new MimeMessageHelper(message, true);
+                helper.setFrom("yukifernando0001@gmail.com");
+                helper.setTo(applicationEntity.getEmail());
+                helper.setSubject("Mentor Application Approved");
+
+                String htmlContent = "<h1>Congratulations!</h1>"
+                        + "<p>Your mentor application has been approved.</p>"
+                        + "<p>Your username is <strong>" + username + "</strong>.</p>"
+                        + "<p>Your temporary password is <strong>" + tempPass + "</strong>.</p>"
+                        + "<p>Please login to the system and change your password.</p>"
+                        + "<p>Best regards,<br>Connect2Mento Team</p>";
+
+                helper.setText(htmlContent, true);
+                emailSender.send(message);
+
+                System.out.println("Mentor application approved.");
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
@@ -60,13 +90,12 @@ public class ApplicationService {
         StringBuilder builder = new StringBuilder();
         int count = 8;
         while (count-- != 0) {
-            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
+            int character = (int)(Math.random() * ALPHA_NUMERIC_STRING.length());
             builder.append(ALPHA_NUMERIC_STRING.charAt(character));
         }
         System.out.println(builder.toString());
         return builder.toString();
     }
-
 
     public void rejectApplication(Long id) {
         System.out.println("Rejecting application with id: " + id);
@@ -75,6 +104,26 @@ public class ApplicationService {
         application.setStatus("REJECTED");
         System.out.println(application.getStatus());
         repository.save(application);
+
+        try {
+            MimeMessage message = emailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true);
+            helper.setFrom("yukifernando0001@gmail.com");
+            helper.setTo(application.getEmail());
+            helper.setSubject("Mentor Application Rejected");
+
+            String htmlContent = "<h1>Sorry!</h1>"
+                    + "<p>Your mentor application has been rejected.</p>"
+                    + "<p>Best regards,<br>Connect2Mento Team</p>";
+
+            helper.setText(htmlContent, true);
+            emailSender.send(message);
+
+            System.out.println("Mentor application rejected.");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public ApplicationEntity addApplication(ApplicationEntity application) {

@@ -1,27 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Row, Col, Card, Table, Button } from 'react-bootstrap';
+import { Row, Col, Card, Table, Button, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import avatar1 from '../../../assets/images/user/avatar-1.jpg';
 import avatar2 from '../../../assets/images/user/avatar-2.jpg';
-import avatar3 from '../../../assets/images/user/avatar-3.jpg';
-import axios from 'axios';
 
-const SamplePage = () => {
+const Mentorapplication = () => {
   const [applications, setApplications] = useState([]);
-
-  // useEffect(() => {
-  //     const fetchApplications = async () => {
-  //         try {
-  //             const response = await axios.get('http://localhost:8080/applications');
-  //             setApplications(response.data);
-  //         } catch (error) {
-  //             console.error('Error fetching mentor applications:', error);
-  //         }
-  //     };
-
-  //     fetchApplications();
-  // }, []);
+  const [selectedApplication, setSelectedApplication] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     fetchApplications();
@@ -37,7 +25,7 @@ const SamplePage = () => {
   };
 
   const handleApprove = async (applicationId) => {
-    const token = localStorage.getItem('jwtToken'); // Replace 'jwtToken' with the actual key you use
+    const token = localStorage.getItem('jwtToken');
 
     try {
       await axios.post(`http://localhost:8080/applications/${applicationId}/approve`, null, {
@@ -64,6 +52,16 @@ const SamplePage = () => {
     } catch (error) {
       console.error('Error rejecting application:', error);
     }
+  };
+
+  const handleView = (app) => {
+    setSelectedApplication(app);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedApplication(null);
   };
 
   return (
@@ -136,7 +134,6 @@ const SamplePage = () => {
                           </>
                         )}
                         <Link
-                          to={`/application/${app.id}`}
                           className="label text-white"
                           style={{
                             height: '1.6rem',
@@ -147,6 +144,7 @@ const SamplePage = () => {
                             padding: '0 1rem',
                             background: 'linear-gradient(to right, blue, lightblue)'
                           }}
+                          onClick={() => handleView(app)}
                         >
                           View
                         </Link>
@@ -159,8 +157,84 @@ const SamplePage = () => {
           </Card>
         </Col>
       </Row>
+
+      {/* Modal for Application Details */}
+      {selectedApplication && (
+        <Modal show={showModal} onHide={handleCloseModal} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>Application Details</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Row>
+              <Col md={4}>
+                <img
+                  className="rounded-circle"
+                  style={{ width: '100px' }}
+                  src={selectedApplication.gender === 'male' ? avatar2 : avatar1}
+                  alt="Profile"
+                />
+              </Col>
+              <Col md={8}>
+                <h5>{selectedApplication.name}</h5>
+                <p>
+                  <strong>Email: </strong>
+                  {selectedApplication.email}
+                </p>
+                <p>
+                  <strong>Status: </strong>
+                  {selectedApplication.status}
+                </p>
+                <p>
+                  <strong>Job Title: </strong>
+                  {selectedApplication.jobTitle}
+                </p>
+                <p>
+                  <strong>Expertise Area: </strong>
+                  {selectedApplication.expertiseArea}
+                </p>
+                <p>
+                  <strong>LinkedIn: </strong>
+                  <a href={selectedApplication.linkedinUrl} target="_blank" rel="noopener noreferrer">
+                    {selectedApplication.linkedinUrl}
+                  </a>
+                </p>
+                <p>
+                  <strong>Company: </strong>
+                  {selectedApplication.company}
+                </p>
+                <p>
+                  <strong>Location: </strong>
+                  {selectedApplication.location}
+                </p>
+                <p>
+                  <strong>Bio: </strong>
+                  {selectedApplication.bio}
+                </p>
+                <p>
+                  <strong>Why Mentor: </strong>
+                  {selectedApplication.whyMentor}
+                </p>
+                {selectedApplication.introvideo && (
+                  <div>
+                    <strong>Intro Video: </strong>
+                    <video width="100%" controls>
+                      <source src={selectedApplication.introvideo} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                )}
+              </Col>
+            </Row>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleCloseModal}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      )}
     </React.Fragment>
   );
 };
 
-export default SamplePage;
+export default Mentorapplication;
