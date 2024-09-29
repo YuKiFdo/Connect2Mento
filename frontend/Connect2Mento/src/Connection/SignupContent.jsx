@@ -2,6 +2,8 @@ import React from 'react'
 import HeaderContent from '../Components/HeaderContent/HeaderContent'
 import './SignupContent.css'
 import logoimage from '../../Images/iconc2m.png'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import LoginConnection from './LoginConnection';
 
 
 function SignupContent() {
@@ -36,7 +38,13 @@ function SignupContent() {
                         />
                     </div>
 
-                    <button className="signup-button">Sign up</button>
+                    <Link to="/login">
+                        <button className="signup-button">Sign up</button>
+                    </Link>
+
+                    <Routes>
+                        <Route path="/login" element={<LoginConnection />} />
+                    </Routes>
 
                     <div className="or-divider">Or</div>
                     <button className="google-login">Log in with Google</button>

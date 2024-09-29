@@ -57,7 +57,7 @@ function Calcontent() {
               <span className="menu-text">Settings</span>
             </a>
 
-            <a href="/mentee" className="menu-link-mentee">
+            <a href="/mentee" className="menu-link">
               <FaSyncAlt className="menu-icon" />
               <span className="menu-text">To Mentee</span>
             </a>

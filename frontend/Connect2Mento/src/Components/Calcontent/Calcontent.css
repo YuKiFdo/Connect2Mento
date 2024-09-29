@@ -106,31 +106,7 @@
     border-radius: 8px;
     transition: background-color 0.3s ease;
   }
-  
-  .menu-link-mentee {
-    display: flex;
-    align-items: center;
-    padding: 15px 10px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #004466;
-    font-size: 17px;
-    font-weight: 500;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    margin-top: 320px;
-  }
-  
-  .menu-link-mentee:hover {
-    background-color: #CEE7F3;
-  }
-  
-  .menu-link-mentee.active {
-    background-color: #CEE7F3;
-  }
-  
-  
-  
+   
   .menu-link:hover {
     background-color: #CEE7F3;
   }

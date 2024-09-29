@@ -1,0 +1,101 @@
+.edit-profile {
+    width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 10px;
+  }
+
+  .update-title{
+    margin-bottom: 10px;
+    margin-right: 1000px;
+    color: #004466;
+  }
+  
+  .profile-section {
+    margin-bottom: 15px;
+  }
+  
+  .profile-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .profile-section input,
+  .profile-section textarea {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1000px;
+    font-size: 16px;
+  }
+  
+  .profile-section-motivation{
+    width: 900px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 1010px;
+  }
+
+  .profile-section-motivation label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .profile-section-challange{
+    width: 900px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 1010px;
+  }
+
+  .profile-section-challange label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .profile-section-goal{
+    width: 900px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 1010px;
+  }
+
+  .profile-section-goal label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  button {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    background-color: #158D7F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 16px;
+    height: 50px;
+  }
+  
+  button:hover {
+    background-color: #025a53;
+  }
+  

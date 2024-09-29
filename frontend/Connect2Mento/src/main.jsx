@@ -13,6 +13,7 @@ import AfterloginContent from './Connection/AfterloginContent.jsx'
 import MentorProfileContent from './Connection/MentorProfileContent.jsx'
 import MentorprofileHome from './Connection/MentorprofileHome.jsx'
 import Calcontent from './Components/Calcontent/Calcontent.jsx'
+import EditProfile from './Components/EditProfile/EditProfile.jsx'
 
 
 import{
@@ -97,6 +98,14 @@ const router = createBrowserRouter([
     path:"/calendar",
     element: <Calcontent />
   }, 
+  {
+    path:"/sign-out",
+    element: <App />
+  },
+  {
+    path:"/profile",
+    element: <EditProfile />
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
