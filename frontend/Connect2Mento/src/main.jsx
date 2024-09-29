@@ -9,6 +9,9 @@ import ViewMentorprofile from './Connection/ViewMentorprofile.jsx'
 import MentorForm from './Connection/MentorForm.jsx'
 import SuccessPage from './Connection/Mentorapplication-success.jsx'
 import Stilldeveloping from './Connection/Stilldeveloping.jsx'
+import AfterloginContent from './Connection/AfterloginContent.jsx'
+import MentorProfileContent from './Connection/MentorProfileContent.jsx'
+import MentorprofileHome from './Connection/MentorprofileHome.jsx'
 
 
 import{
@@ -69,6 +72,27 @@ const router = createBrowserRouter([
     path:"/top",
     element: <Stilldeveloping />
   },
+  {
+    path:"/afterlogincontent",
+    element: <AfterloginContent />
+  },
+  {
+    path:"/dashboard",
+    element: <MentorProfileContent />
+  },
+  {
+    path:"/home",
+    element: <MentorprofileHome />
+  },
+  {
+    path:"/new",
+    element: <AfterloginContent />
+  },
+  {
+    path:"/new",
+    element: <MentorProfileContent />
+  },
+  
   
 ]);
 

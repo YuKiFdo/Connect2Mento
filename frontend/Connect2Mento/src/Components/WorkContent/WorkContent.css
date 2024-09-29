@@ -12,15 +12,47 @@
 
 }
 
-.work-first-left-top, 
-.work-two-right-top, 
-.work-three-left-top, 
+
+
 .work-four-right-top{
 color: #023650;
 font-size: 25px;
 font-family: Source Serif Pro;
 font-weight: 400;
+text-align: center;
+font-weight: bold;
 }
+
+.work-first-left-top{
+    color: #023650;
+    font-size: 25px;
+    font-family: Source Serif Pro;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.work-three-left-top{
+    color: #023650;
+    font-size: 25px;
+    font-family: Source Serif Pro;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.work-two-right-top {
+    color: #023650;
+    font-size: 25px;
+    font-family: Source Serif Pro;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 45px;
+    font-weight: bold;
+}
+
 
 
 .work-first-left-bottom, 
@@ -34,7 +66,8 @@ font-family: Source Serif Pro;
 font-weight: 400;
 width: 300px;
 margin-left: 180px;
-
+text-align: left;
+margin-top: 30px;
 }
 
 .work-first-left, .work-first-right, 

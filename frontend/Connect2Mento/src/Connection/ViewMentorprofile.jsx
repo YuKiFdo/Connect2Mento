@@ -38,9 +38,9 @@ function ViewMentorprofile() {
                 <div class="left-mentor">
                     <div class="bottom-part">
                         
-                    <div class="bottom-last-left"><p><b>$200  / month</b></p></div>
+                    <div class="bottom-last-left"><p class="price">$200  / month</p></div>
                     <div class="bottom-top">
-                        <p>video calls, pair programming, code reviews, interview practice & unlimited chat on slack. </p>
+                        <p class="para">video calls, pair programming, code reviews, interview practice & unlimited chat on slack. </p>
                         </div>
                         
                         <div class="features-mentor">

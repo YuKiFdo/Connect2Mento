@@ -2,6 +2,9 @@ import HeaderContent from '../Components/HeaderContent/HeaderContent'
 import React, { useState } from 'react';
 import './LoginConnection.css'; 
 import logoimage from '../../Images/iconc2m.png'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import AfterloginContent from './AfterloginContent';
+
 
 const LoginConnection = () => {
     const [isMentee, setIsMentee] = useState(true);
@@ -42,7 +45,16 @@ const LoginConnection = () => {
                     <label className='label2'>Password</label>
                     <input type="password" placeholder="Enter password" />
 
-                    <button className="login-button">Log in</button>
+
+                    <Link to="/afterlogincontent">
+                        <button className="login-button">Log in</button>
+                    </Link>
+
+                    <Routes>
+                        <Route path="/afterlogincontent" element={<AfterloginContent />} />
+                    </Routes>
+                    
+                    
 
                     {!isMentee ? null : (
                         <>

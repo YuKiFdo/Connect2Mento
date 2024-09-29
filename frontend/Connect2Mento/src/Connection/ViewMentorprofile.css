@@ -138,8 +138,6 @@
 }
 
 .features-mentor{
-
-  font-size: 17px;
   padding-top: 27px;
   color: #777777;
   margin-right: 100px;
@@ -147,18 +145,22 @@
 
 .vedio{
   margin-right: 225px;
+  font-size: 17px;
 }
 
 .code{
   margin-right: 354px;
+  font-size: 17px;
 }
 
 .inter{
   margin-right: 320px;
+  font-size: 17px;
 }
 
 .unlimit{
   margin-right: 280px;
+  font-size: 17px;
 }
 
 
@@ -184,7 +186,7 @@
 
 .bottom-top{
   font-size: 20px;
-  margin-left: 24px;
+  margin-left: 0px;
 
 }
 
@@ -202,6 +204,12 @@
 
   font-size: 40px;
 
+}
+
+.price{
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
 }
 
 .bottom-last{

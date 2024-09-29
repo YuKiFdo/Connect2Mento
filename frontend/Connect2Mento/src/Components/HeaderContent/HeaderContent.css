@@ -1,4 +1,5 @@
-#navcontent{min-height: 10vh;
+#navcontent{
+min-height: 10vh;
 background-color: white;
 color: Black;
 display: flex;
@@ -6,7 +7,10 @@ justify-content: space-between;
 align-items: center;
 padding-left: 10rem;
 padding-right: 10rem;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+/* sx={{ width: {xs: 100, sm: 200, md: 300, lg: 400, xl:500,} }} */
+}
 
 .logo{
 height: 8.5em;
@@ -66,3 +70,26 @@ transition: color 0.3s ease;
 .login:hover{
 color: #20c997;    
 }
+
+button{
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #02516a;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+/* @media (max-width:768px) {
+        .logo{
+            display: flex;
+            position: absolute;
+            top: 15px;
+            left: 35px;
+        }
+        .link{
+            display: none;
+        }
+} */

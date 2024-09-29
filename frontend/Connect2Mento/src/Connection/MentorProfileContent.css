@@ -1,0 +1,339 @@
+.full-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start; 
+  min-height: 100vh; 
+
+   #nav-bar{
+    min-height: 10vh;
+    background-color: white;
+    color: Black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    }
+    
+    .logo{
+    height: 8.5em;
+    padding: 1.5em;
+    
+    }
+    
+    .dashboard-title{
+      margin-right: 1000px;
+      color: #02516a;
+      font-size: 30px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    
+    #second-bar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    }
+    
+    .out-btn{
+    background-color: #158D7F; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    }
+    
+    .out-btn:hover{
+    background-color: #025a53;
+    }
+    
+    button{
+        border: none;
+        background: none;
+        font-size: 20px;
+        color: #02516a;
+    }
+    
+    .mobile-menu-icon{
+        display: none;
+    }
+
+
+/* Sidebar.css */
+.sidebar {
+  width: 200px;
+  height: 850px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 160px;
+  left: 95px;
+}
+
+/* Individual Menu Links */
+.menu-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #004466;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-link-mentee {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #004466;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-top: 320px;
+}
+
+.menu-link-mentee:hover {
+  background-color: #CEE7F3;
+}
+
+.menu-link-mentee.active {
+  background-color: #CEE7F3;
+}
+
+
+
+.menu-link:hover {
+  background-color: #CEE7F3;
+}
+
+.menu-link:active {
+  background-color: #CEE7F3;
+}
+
+.menu-icon {
+  font-size: 25px;
+  margin-right: 15px;
+  color: #004466;
+}
+
+.menu-text {
+  color: #004466;
+}
+
+/* MentorProfile.css */
+
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  max-width: 1500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+  margin-left: 210px;
+  height: 850px;
+}
+
+.profile-left {
+  width: 30%;
+  text-align: center;
+  background-color: #CEE7F3;
+
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.mentor-title {
+  color: #0d443dc9;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  margin-left: 130px;
+}
+.facebook-image{
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 150px;
+  width: 60px;
+}
+
+.instegram-image{
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 150px;
+  width: 60px;
+}
+
+.linkedin-image{
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 150px;
+  width: 60px;
+}
+
+.profile-info {
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 70px;
+}
+
+.profile-info h3{
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 50px;
+  margin-left: 105px;
+}
+
+.profile-info p{
+  text-align: left;
+  padding-left: 15px;
+  margin-left: 105px;
+}
+
+.facebook{
+  margin-right: 800px;
+  margin-top: 100px;
+}
+
+.profile-right {
+  width: 65%;
+}
+
+.profile-section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+li{
+  text-align: left;
+  font-size: 17px;
+  color: #666;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  text-align: left;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills p {
+  margin-bottom: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  height: 850px;
+  width: 1500px;
+  margin-left: 210px;
+  margin-top: 10px;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.performance-sections, .bottom-sections {
+  display: flex;
+  gap: 20px;
+}
+
+.lessonsandassignments{
+  background-color: white;
+  width: 1000px;
+  border-radius: 10px;
+  
+}
+
+.lessonsandassignments h3{
+ margin-left: 15px;
+}
+.firstul{
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  text-align: left;
+}
+.secondtul{
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  text-align: left;
+}
+
+.thirdul{
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  text-align: left;
+}
+
+.lessondate{
+  text-align: left;
+}

@@ -19,7 +19,7 @@ const MentorContent = () => {
       {
         name: 'Pathum Jayasundara',
         title: 'Family Lawyer',
-        skills: ['Divorce', 'Adoption', 'Alimony', 'Custody'],
+        skills: ['Divorce', 'Adoption', 'Alimony', ],
         image: '../../../Images/pexels-itay-verchik-1150587-16773284.jpg',
       },
       {
@@ -43,13 +43,13 @@ const MentorContent = () => {
       {
         name: 'Dewmi Dinangi',
         title: 'Back End Developer',
-        skills: ['C++', 'Python', 'Java', 'PHP', 'Oracle', 'MySQL'],
+        skills: ['Python', 'Java', 'PHP',],
         image: '../../../Images/pexels-mikhail-nilov-8872811.jpg',
       },
       {
         name: 'Thisumi Shinaya',
         title: 'Full Stack Developr',
-        skills: ['Python', 'React', 'Java', 'Oracle', 'MySQL'],
+        skills: ['Python', 'React', 'Java', 'Oracle',],
         image: '../../../Images/Jovem linda mulher de negócios trabalhando no computador em um café _ Foto Grátis.jpeg',
       },
     ];

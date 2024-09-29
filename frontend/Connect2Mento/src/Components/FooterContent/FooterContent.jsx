@@ -41,8 +41,8 @@ function FooterContent() {
             </div>
             </div>
             
-            <div class="facebook">
-            <img  class="facebookimg" src='./images/facebook.png' alt="facebook"></img>
+            <div class="facebookimgdiv">
+            <img  class="facebookimg" src='./images/facebook.png' alt="facebookimage"></img>
             </div>
             
             <div class="twitter">

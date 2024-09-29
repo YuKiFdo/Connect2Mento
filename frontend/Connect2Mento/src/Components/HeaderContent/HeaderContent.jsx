@@ -1,6 +1,7 @@
 import React from 'react'
 import './HeaderContent.css'
 import Menulink from '../MenuLink/MenuLink'
+import { FaBars } from 'react-icons/fa'
 
 function HeaderContent() {
   return (
@@ -21,6 +22,11 @@ function HeaderContent() {
           <a href="/browse" className="browse-btn">Brows All Mentors</a>
           <a href="/login" className="login">Login</a>
         </div>
+
+      <button className='mobile-menu-icon'>
+        <FaBars/>
+      </button>
+
     </div>
     
     
