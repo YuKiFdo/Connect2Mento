@@ -1,12 +1,13 @@
 import React from 'react'
 import './HeaderContent.css'
 import Menulink from '../MenuLink/MenuLink'
+import logo from '../../../Images/iconc2m.png'
 
 function HeaderContent() {
   return (
     <div id="navcontent">
       <a href="/">
-      <img  className='logo' src='./images/c2m.png' alt="Connect2Mento" />
+      <img  className='logo' src={logo} alt="Connect2Mento" />
       </a>
         
       <div className='link'>

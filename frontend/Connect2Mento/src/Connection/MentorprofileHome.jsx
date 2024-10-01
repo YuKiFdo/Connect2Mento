@@ -1,5 +1,5 @@
 import React from 'react';
-import './MentorProfileHome.css';
+import '../Connection/MentorprofileHome.css';
 import facebook from '../../Images/v237_167.png'
 import mentor1 from '../../Images/pexels-mikhail-nilov-8871860.png'
 import instegram from '../../Images/v237_169.png'
