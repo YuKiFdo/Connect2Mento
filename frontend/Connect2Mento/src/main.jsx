@@ -11,10 +11,11 @@ import SuccessPage from './Connection/Mentorapplication-success.jsx'
 import Stilldeveloping from './Connection/Stilldeveloping.jsx'
 import AfterloginContent from './Connection/AfterloginContent.jsx'
 import MentorProfileContent from './Connection/MentorProfileContent.jsx'
-import MentorprofileHome from './Connection/MentorprofileHome.jsx'
-import Calcontent from './Components/Calcontent/Calcontent.jsx'
-import EditProfile from './Components/EditProfile/EditProfile.jsx'
-
+import MentorProfileHome from './Connection/MentorprofileHome.jsx'
+import MentorEdit from './Components/MentorEdit/MentorEdit.jsx'
+import MentorCalendar from './Components/MentorCalendar/MentorCalendar.jsx'
+import MentorChat from './Components/MentorChat/MentorChat.jsx'
+import MenteeDashboard from './Components/MenteeDashboard/MenteeDashboard.jsx'
 
 import{
   createBrowserRouter,
@@ -83,28 +84,32 @@ const router = createBrowserRouter([
     element: <MentorProfileContent />
   },
   {
-    path:"/home",
-    element: <MentorprofileHome />
+    path:"/sign-out",
+    element: <App />
   },
   {
     path:"/new",
     element: <AfterloginContent />
   },
   {
-    path:"/new",
-    element: <MentorProfileContent />
-  }, 
-  {
-    path:"/calendar",
-    element: <Calcontent />
-  }, 
-  {
-    path:"/sign-out",
-    element: <App />
+    path:"/home",
+    element: <MentorProfileHome />
   },
   {
     path:"/profile",
-    element: <EditProfile />
+    element: <MentorEdit />
+  },
+  {
+    path:"/calendar",
+    element: <MentorCalendar />
+  },
+  {
+    path:"/chat",
+    element: <MentorChat />
+  },
+  {
+    path:"/mentee",
+    element: <MenteeDashboard />
   },
 ]);
 

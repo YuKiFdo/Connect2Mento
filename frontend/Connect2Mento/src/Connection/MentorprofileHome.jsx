@@ -1,14 +1,19 @@
 import React from 'react';
 import './MentorProfileHome.css';
-import { FaHome, FaUser, FaCalendarAlt, FaComments, FaChartBar, FaCog, FaSyncAlt } from 'react-icons/fa';
-import { FaBars } from 'react-icons/fa'
 import facebook from '../../Images/v237_167.png'
 import mentor1 from '../../Images/pexels-mikhail-nilov-8871860.png'
 import instegram from '../../Images/v237_169.png'
 import linkedin from '../../Images/v237_168.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { faComments } from '@fortawesome/free-solid-svg-icons';
+import { faRepeat } from '@fortawesome/free-solid-svg-icons';
+
 
 const MentorProfileHome = () => {
-  return (
+  return(
   <div className='full-page'>
 
       <div id="nav-bar">
@@ -21,59 +26,38 @@ const MentorProfileHome = () => {
               <div id="second-bar">
                 <a href="/sign-out" className="out-btn">Sign Out</a>
               </div>
-
-            <button className='mobile-menu-icon'>
-              <FaBars/>
-            </button>
       </div>
 
+                <div className="sidebar">
+                <a href="/home" className="menu-link">
+                <FontAwesomeIcon icon={faHome} />
+                  <span className="menu-text"> Home</span>
+                </a>
 
-        <div className="sidebar">
-              <a href="/home" className="menu-link">
-                <FaHome className="menu-icon" />
-                <span className="menu-text">Home</span>
-              </a>
+                <a href="/profile" className="menu-link">
+                <FontAwesomeIcon icon={faUser} />
+                  <span className="menu-text">Profile</span>
+                </a>
 
-              <a href="/profile" className="menu-link">
-                <FaUser className="menu-icon" />
-                <span className="menu-text">Profile</span>
-              </a>
+                <a href="/calendar" className="menu-link">
+                <FontAwesomeIcon icon={faCalendar} />
+                  <span className="menu-text">Calendar</span>
+                </a>
 
-              <a href="/calendar" className="menu-link">
-                <FaCalendarAlt className="menu-icon" />
-                <span className="menu-text">Calendar</span>
-              </a>
+                <a href="/chat" className="menu-link">
+                <FontAwesomeIcon icon={faComments} />
+                  <span className="menu-text">Chat</span>
+                </a>
 
-              <a href="/chat" className="menu-link">
-                <FaComments className="menu-icon" />
-                <span className="menu-text">Chat</span>
-              </a>
+                <a href="/mentee" className="menu-link">
+                <FontAwesomeIcon icon={faRepeat} />
+                  <span className="menu-text">To Mentee</span>
+                </a>
+              </div>
 
-              <a href="/insights" className="menu-link">
-                <FaChartBar className="menu-icon" />
-                <span className="menu-text">Insights</span>
-              </a>
-
-              <a href="/settings" className="menu-link">
-                <FaCog className="menu-icon" />
-                <span className="menu-text">Settings</span>
-              </a>
-
-              <a href="/mentee" className="menu-link">
-                <FaSyncAlt className="menu-icon" />
-                <span className="menu-text">To Mentee</span>
-              </a>
-          </div>
-
-
-
-
-
-
-
-            <div className="profile-card">
-              <div className="profile-left">
-                <img 
+             <div className="profile-card">
+               <div className="profile-left">
+                 <img 
                   src={mentor1}
                   alt="Dr. Sarah Collins" 
                   className="profile-image" 
@@ -156,9 +140,9 @@ const MentorProfileHome = () => {
   </div>
     
 
-    
+  ) 
 
-  );
+
 };
 
 export default MentorProfileHome;
