@@ -54,8 +54,8 @@ To build and run the containers locally:
 The application is hosted on Azure Web Apps using Docker containers.
 
 #### Hosted URLs
-Mentee Frontend: [Connect2Mento (Mentee)](https://connect2mento-frontend.azurewebsites.net/)
-Admin Frontend: [Admin Connect2Mento](https://admin-connect2mento.azurewebsites.net/)
+Mentee Frontend: [Connect2Mento (Mentee)](https://connect2mento-frontend.azurewebsites.net/) <br>
+Admin Frontend: [Admin Connect2Mento](https://admin-connect2mento.azurewebsites.net/) <br>
 Backend: [Connect2Mento API](connect2mento-backend.azurewebsites.net) 
 
 ##### Steps to deploy on Azure
